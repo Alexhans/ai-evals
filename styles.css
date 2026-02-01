@@ -1,0 +1,315 @@
+/* css styles */
+pre code {
+  white-space: pre-wrap !important;  /* enable wrapping */
+  word-break: break-word;            /* break long tokens */
+}
+/* Rotate comparison table headers to reduce horizontal width. */
+.comparison-table table thead th,
+.comparison-table table.dataTable thead th,
+.comparison-table table.dataframe thead th {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  padding: 6px 4px;
+  height: 140px;
+  vertical-align: bottom;
+}
+
+/* Yes/No cell coloring for comparison tables. */
+.comparison-table td.yn-yes {
+  background: var(--eval-yes-bg);
+  color: var(--eval-yes-text);
+  font-weight: 700;
+  text-align: center;
+}
+
+.comparison-table td.yn-no {
+  background: var(--eval-no-bg);
+  color: var(--eval-no-text);
+  font-weight: 700;
+  text-align: center;
+}
+
+.comparison-table td.yn-unknown {
+  background: var(--eval-unknown-bg);
+  color: var(--eval-unknown-text);
+  font-weight: 700;
+  text-align: center;
+}
+
+.comparison-table td.yn-partial {
+  background: var(--eval-partial-bg);
+  color: var(--eval-partial-text);
+  font-weight: 700;
+  text-align: center;
+}
+
+.comparison-table td.yn-partial.yn-doc {
+  background: var(--eval-partial-doc-bg);
+  color: var(--eval-partial-doc-text);
+}
+
+.comparison-table td.yn-doc.yn-yes {
+  background: var(--eval-yes-doc-bg);
+  color: var(--eval-yes-doc-text);
+}
+
+.comparison-table td.yn-doc.yn-no {
+  background: var(--eval-no-doc-bg);
+  color: var(--eval-no-doc-text);
+}
+
+.comparison-table .col-hidden {
+  display: none;
+}
+
+
+/* Freeze first column (framework name) for horizontal scroll on small screens. */
+.comparison-table table.dataTable th:first-child,
+.comparison-table table.dataTable td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background-color: var(--bs-body-bg);
+  background-clip: padding-box;
+  box-shadow: 2px 0 0 rgba(0, 0, 0, 0.06);
+}
+
+body.quarto-dark .comparison-table table.dataTable th:first-child,
+body.quarto-dark .comparison-table table.dataTable td:first-child {
+  box-shadow: 2px 0 0 rgba(255, 255, 255, 0.12);
+}
+
+body.quarto-dark .comparison-table table.dataTable,
+body.quarto-dark .comparison-table table.dataTable th,
+body.quarto-dark .comparison-table table.dataTable td {
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+body.quarto-dark .comparison-table table.dataTable {
+  border-collapse: collapse;
+}
+
+body.quarto-dark .comparison-table table.dataTable tbody td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+body.quarto-dark .comparison-table table.dataTable th,
+body.quarto-dark .comparison-table table.dataTable td {
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+body.quarto-dark .comparison-table table.dataTable th:last-child,
+body.quarto-dark .comparison-table table.dataTable td:last-child {
+  border-right: none;
+}
+
+body.quarto-dark .comparison-table td.yn-yes {
+  background: var(--eval-yes-bg);
+  color: var(--eval-yes-text);
+}
+
+body.quarto-dark .comparison-table td.yn-no {
+  background: var(--eval-no-bg);
+  color: var(--eval-no-text);
+}
+
+body.quarto-dark .comparison-table td.yn-unknown {
+  background: var(--eval-unknown-bg);
+  color: var(--eval-unknown-text);
+}
+
+body.quarto-dark .comparison-table td.yn-doc.yn-yes {
+  background: var(--eval-yes-doc-bg);
+  color: var(--eval-yes-doc-text);
+}
+
+body.quarto-dark .comparison-table td.yn-doc.yn-no {
+  background: var(--eval-no-doc-bg);
+  color: var(--eval-no-doc-text);
+}
+
+:root {
+  --eval-yes-bg: #d6f5d6;
+  --eval-yes-text: #145214;
+  --eval-no-bg: #f8d7da;
+  --eval-no-text: #6b1b1b;
+  --eval-unknown-bg: #eeeeee;
+  --eval-unknown-text: #666666;
+  --eval-partial-bg: #f3e6b8;
+  --eval-partial-text: #6a5713;
+  --eval-partial-doc-bg: #f5efe0;
+  --eval-partial-doc-text: #7a6a3a;
+  --eval-yes-doc-bg: #eef5ee;
+  --eval-yes-doc-text: #5b7a5b;
+  --eval-no-doc-bg: #f6eeef;
+  --eval-no-doc-text: #8a6168;
+}
+
+body.quarto-dark {
+  --eval-yes-bg: #1f4d2a;
+  --eval-yes-text: #cfead6;
+  --eval-no-bg: #4a1f24;
+  --eval-no-text: #f2c9ce;
+  --eval-unknown-bg: #2a2a2a;
+  --eval-unknown-text: #cfcfcf;
+  --eval-partial-bg: #4b3f1c;
+  --eval-partial-text: #e4d3a0;
+  --eval-partial-doc-bg: #3b3624;
+  --eval-partial-doc-text: #c7b98a;
+  --eval-yes-doc-bg: #24402b;
+  --eval-yes-doc-text: #9db6a3;
+  --eval-no-doc-bg: #41282c;
+  --eval-no-doc-text: #c7a2a7;
+}
+
+.eval-legend {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.eval-legend .eval-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.eval-legend .eval-chip.yes {
+  background: var(--eval-yes-bg);
+  color: var(--eval-yes-text);
+}
+
+.eval-legend .eval-chip.no {
+  background: var(--eval-no-bg);
+  color: var(--eval-no-text);
+}
+
+.eval-legend .eval-chip.unknown {
+  background: var(--eval-unknown-bg);
+  color: var(--eval-unknown-text);
+}
+
+.eval-legend .eval-chip.partial {
+  background: var(--eval-partial-bg);
+  color: var(--eval-partial-text);
+}
+
+.eval-legend .eval-chip.partial.doc {
+  background: var(--eval-partial-doc-bg);
+  color: var(--eval-partial-doc-text);
+}
+
+.eval-legend .eval-chip.yes.doc {
+  background: var(--eval-yes-doc-bg);
+  color: var(--eval-yes-doc-text);
+}
+
+.eval-legend .eval-chip.no.doc {
+  background: var(--eval-no-doc-bg);
+  color: var(--eval-no-doc-text);
+}
+
+.eval-legend .eval-chip.doc {
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.35);
+}
+
+.eval-legend .eval-chip.proven {
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.65);
+}
+
+body.quarto-dark .eval-legend .eval-chip.doc {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
+
+body.quarto-dark .eval-legend .eval-chip.proven {
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.65);
+}
+
+/* Hero role rotator */
+.hero {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.role-rotator {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.role-item {
+  opacity: 0.55;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: opacity 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.role-item.is-active {
+  opacity: 1;
+  background: #0f0f0f;
+  color: #ffffff;
+}
+
+.role-explainer {
+  margin-top: 0.75rem;
+  max-width: 50ch;
+}
+
+.role-copy {
+  display: none;
+  margin: 0;
+}
+
+.role-copy.is-active {
+  display: block;
+}
+
+.btn-cta,
+.btn-secondary {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-right: 0.6rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-cta {
+  background: #0f0f0f;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  border: 1px solid #0f0f0f;
+  color: #0f0f0f;
+}
+
+body.quarto-dark .btn-cta {
+  background: #f5f5f5;
+  color: #111111;
+}
+
+body.quarto-dark .btn-secondary {
+  border-color: #f5f5f5;
+  color: #f5f5f5;
+}
+
+body.quarto-dark .role-item {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+body.quarto-dark .role-item.is-active {
+  background: #f5f5f5;
+  color: #111111;
+}

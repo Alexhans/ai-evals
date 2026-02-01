@@ -1,0 +1,247 @@
+[
+  {
+    "objectID": "resources/index.html",
+    "href": "resources/index.html",
+    "title": "Evals Resources",
+    "section": "",
+    "text": "Aparna Dhinakaran - Medium · The AI Engineer (Newsletter) - Co-founder and CPO (Chief Product Officer) of Arize AI; writes about evals and tooling. Formerly Cornell CV PhD, Uber ML, UC Berkeley AI Research. (updated 2026-02-01)\nIan W. (Promptfoo creator) - Blog - Posts by the creator of Promptfoo, often about evals and tooling. (updated 2026-02-01)\nEugene Yan - Blog - Practical ML/AI writing with useful evaluation and production insights. (updated 2026-02-01)\nHamel Husain - Blog - Machine learning engineer with 20+ years experience; independent consultant helping companies build AI products. Formerly at Airbnb and GitHub; open-source contributor. (updated 2026-02-01)\n\n\n\n\n\nVivek Menon - Awesome AI Eval (GitHub) - Curated list of AI evaluation tools, papers, and resources. (updated 2026-02-01)\n\n\n\n\n\nHacker News - Search: evals - Live HN search results for evals discussions. (updated 2026-02-01)\nReddit - r/LocalLLaMA - Local-first AI community with lots of eval, tooling, and control discussions. (updated 2026-02-01)"
+  },
+  {
+    "objectID": "resources/index.html#blogs",
+    "href": "resources/index.html#blogs",
+    "title": "Evals Resources",
+    "section": "",
+    "text": "Aparna Dhinakaran - Medium · The AI Engineer (Newsletter) - Co-founder and CPO (Chief Product Officer) of Arize AI; writes about evals and tooling. Formerly Cornell CV PhD, Uber ML, UC Berkeley AI Research. (updated 2026-02-01)\nIan W. (Promptfoo creator) - Blog - Posts by the creator of Promptfoo, often about evals and tooling. (updated 2026-02-01)\nEugene Yan - Blog - Practical ML/AI writing with useful evaluation and production insights. (updated 2026-02-01)\nHamel Husain - Blog - Machine learning engineer with 20+ years experience; independent consultant helping companies build AI products. Formerly at Airbnb and GitHub; open-source contributor. (updated 2026-02-01)"
+  },
+  {
+    "objectID": "resources/index.html#resources",
+    "href": "resources/index.html#resources",
+    "title": "Evals Resources",
+    "section": "",
+    "text": "Vivek Menon - Awesome AI Eval (GitHub) - Curated list of AI evaluation tools, papers, and resources. (updated 2026-02-01)"
+  },
+  {
+    "objectID": "resources/index.html#communities",
+    "href": "resources/index.html#communities",
+    "title": "Evals Resources",
+    "section": "",
+    "text": "Hacker News - Search: evals - Live HN search results for evals discussions. (updated 2026-02-01)\nReddit - r/LocalLLaMA - Local-first AI community with lots of eval, tooling, and control discussions. (updated 2026-02-01)"
+  },
+  {
+    "objectID": "methodology-short.html",
+    "href": "methodology-short.html",
+    "title": "AI-Evals.io",
+    "section": "",
+    "text": "Evidence tags: proven means I validated it, docs means I only saw it in documentation."
+  },
+  {
+    "objectID": "methodology-short.html#methodology",
+    "href": "methodology-short.html#methodology",
+    "title": "AI-Evals.io",
+    "section": "",
+    "text": "Evidence tags: proven means I validated it, docs means I only saw it in documentation."
+  },
+  {
+    "objectID": "methodology-legend.html",
+    "href": "methodology-legend.html",
+    "title": "AI-Evals.io",
+    "section": "",
+    "text": "Y, proven y, docs Proven: Tested and proven it works. Docs: Mentioned in the docs but not proven. N, proven n, docs Proven: Tested and proven it does not work. Docs: Mentioned in the docs but not proven. P, partial p, docs Proven: Tested limited support or coverage. Docs: Limited support mentioned in docs but not proven.\n?, unknown No information"
+  },
+  {
+    "objectID": "frameworks/comparison.html#context",
+    "href": "frameworks/comparison.html#context",
+    "title": "Tool Comparison",
+    "section": "Context",
+    "text": "Context\n\n\n\n\n\n    \n    \n    \n        \n        \n        \n        \n        \n        \n        \n        \n    \n    \n   \n    \n      \n  \n        \n    \n    \n  \n        \n    \n    \n  \n        \n    \n      \n  \n        \n            \n                \n                \n            \n\n            \n                \n                \n            \n\n            \n                \n                \n            \n\n            \n                \n                \n            \n\n            \n                \n                \n            \n        \n    \n\n\n    Loading ITables v2.6.2 from the internet...\n    (need help?)"
+  },
+  {
+    "objectID": "frameworks/comparison.html#core-capabilities",
+    "href": "frameworks/comparison.html#core-capabilities",
+    "title": "Tool Comparison",
+    "section": "Core capabilities",
+    "text": "Core capabilities\n\n\n\n\n\n    \n    \n    \n        \n        \n        \n        \n        \n        \n        \n        \n    \n    \n   \n    \n      \n  \n        \n    \n    \n  \n        \n    \n    \n  \n        \n    \n      \n  \n        \n            \n                \n                \n            \n\n            \n                \n                \n            \n\n            \n                \n                \n            \n\n            \n                \n                \n            \n\n            \n                \n                \n            \n        \n    \n\n\n    Loading ITables v2.6.2 from the internet...\n    (need help?)"
+  },
+  {
+    "objectID": "frameworks/comparison.html#everything-all-at-once-experimental",
+    "href": "frameworks/comparison.html#everything-all-at-once-experimental",
+    "title": "Tool Comparison",
+    "section": "Everything all at once (Experimental)",
+    "text": "Everything all at once (Experimental)\nExperimental: this will evolve into a full, filterable matrix.\n\n\n\n\n\n    \n    \n    \n        \n        \n        \n        \n        \n        \n        \n        \n    \n    \n   \n    \n      \n  \n        \n    \n    \n  \n        \n    \n    \n  \n        \n    \n      \n  \n        \n            \n                \n                \n            \n\n            \n                \n                \n            \n\n            \n                \n                \n            \n\n            \n                \n                \n            \n\n            \n                \n                \n            \n        \n    \n\n\n    Loading ITables v2.6.2 from the internet...\n    (need help?)"
+  },
+  {
+    "objectID": "frameworks/comparison.html#methodology",
+    "href": "frameworks/comparison.html#methodology",
+    "title": "Tool Comparison",
+    "section": "Methodology",
+    "text": "Methodology\n\nEvidence tags: proven means I validated it, docs means I only saw it in documentation.\n\n\nY, proven y, docs Proven: Tested and proven it works. Docs: Mentioned in the docs but not proven. N, proven n, docs Proven: Tested and proven it does not work. Docs: Mentioned in the docs but not proven. P, partial p, docs Proven: Tested limited support or coverage. Docs: Limited support mentioned in docs but not proven.\n?, unknown No information\n\n\n\n\n\n\n\nNote\n\n\n\nI prioritized data content over table aesthetics at launch, and I will keep iterating to make it more beautiful for a better user experience.\nSee Experimental version using ObservableJS"
+  },
+  {
+    "objectID": "cookbook/rag-evals.html",
+    "href": "cookbook/rag-evals.html",
+    "title": "Cookbook",
+    "section": "",
+    "text": "Resources will appear here once I determine waht the right level is for the audeince. There’s far too many high level instructions that can not be followed easily."
+  },
+  {
+    "objectID": "cookbook/rag-evals.html#external-cookbooks-and-guides",
+    "href": "cookbook/rag-evals.html#external-cookbooks-and-guides",
+    "title": "Cookbook",
+    "section": "",
+    "text": "Resources will appear here once I determine waht the right level is for the audeince. There’s far too many high level instructions that can not be followed easily."
+  },
+  {
+    "objectID": "community/001-launch.html",
+    "href": "community/001-launch.html",
+    "title": "001 - Launch",
+    "section": "",
+    "text": "TODO: draft first issue."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "AI-Evals.io helps practitioners choose LLM evaluation frameworks through honest comparison, based on hands-on testing and documentation research, not marketing claims.\nThe framework comparison table shows what actually works, what’s documented but unverified, and what we haven’t tested yet. No vendor hype. No assumptions."
+  },
+  {
+    "objectID": "about.html#what-this-is",
+    "href": "about.html#what-this-is",
+    "title": "About",
+    "section": "",
+    "text": "AI-Evals.io helps practitioners choose LLM evaluation frameworks through honest comparison, based on hands-on testing and documentation research, not marketing claims.\nThe framework comparison table shows what actually works, what’s documented but unverified, and what we haven’t tested yet. No vendor hype. No assumptions."
+  },
+  {
+    "objectID": "about.html#who-built-it",
+    "href": "about.html#who-built-it",
+    "title": "About",
+    "section": "Who Built it",
+    "text": "Who Built it\nBuilt by Alex Guglielmone Nemi\nLinkedIn • GitHub • Newsletter"
+  },
+  {
+    "objectID": "about.html#why",
+    "href": "about.html#why",
+    "title": "About",
+    "section": "Why",
+    "text": "Why\n\nFor my own benefit and because I think evals and testing are pivotal to automation: You rely on what you can’t test.\nTo help the open source community\nTo help different role families pick the right tools for them.\nTo ground discussions on specifics and prove them."
+  },
+  {
+    "objectID": "about.html#principles",
+    "href": "about.html#principles",
+    "title": "About",
+    "section": "Principles",
+    "text": "Principles\n\nQuality over assumptions: I’d rather have “unknown” than over-populate\nPractitioner-focused: We compare based on real production needs, not theoretical features\nTool-agnostic: Tools come and go. This may even help many improve at the same time.\nLiving resource: The comparison evolves as we test more frameworks and features"
+  },
+  {
+    "objectID": "about.html#methodology",
+    "href": "about.html#methodology",
+    "title": "About",
+    "section": "Methodology",
+    "text": "Methodology\n\nY, proven y, docs Proven: Tested and proven it works. Docs: Mentioned in the docs but not proven. N, proven n, docs Proven: Tested and proven it does not work. Docs: Mentioned in the docs but not proven. P, partial p, docs Proven: Tested limited support or coverage. Docs: Limited support mentioned in docs but not proven.\n?, unknown No information"
+  },
+  {
+    "objectID": "about.html#methodology-1",
+    "href": "about.html#methodology-1",
+    "title": "About",
+    "section": "Methodology",
+    "text": "Methodology\nThis site prioritizes practical, reproducible evals over marketing claims.\n\nEvidence tags: proven means I validated it, docs means I only saw it in documentation.\n\nIf you spot an error or have better evidence, open a GitHub issue or send a note."
+  },
+  {
+    "objectID": "about.html#platform-choices",
+    "href": "about.html#platform-choices",
+    "title": "About",
+    "section": "Platform Choices",
+    "text": "Platform Choices\n\nQuarto: Separates data from presentation, making updates easy and transparent\nButtondown: Privacy-respecting newsletter platform with easy unsubscribe and data export\nOpen source: Full source code will be available on GitHub for transparency and contributions before Mar 2026\n\nMore on privacy"
+  },
+  {
+    "objectID": "about.html#roadmap",
+    "href": "about.html#roadmap",
+    "title": "About",
+    "section": "Roadmap",
+    "text": "Roadmap\n\nExpand framework coverage\nEnsure programmatic access to the data is easy\nAdd interactive decision tree to help users choose frameworks\nCreate/Share practical cookbooks for common eval patterns\nBuild regional communities around evaluation best practices\n\n\nHave feedback? Reach out or join the newsletter."
+  },
+  {
+    "objectID": "community/index.html",
+    "href": "community/index.html",
+    "title": "Community",
+    "section": "",
+    "text": "Newsletter\nWe’ll publish occasional updates with new tools, eval write‑ups, and useful links.\n\nSubscribe to Newsletter (Buttondown)\nNewsletter archive\n\n\n\nEvents\nIf you run an evals meetup, talk, or workshop, send it our way.\n\nLondon, UK - TBD date (community meetup)\n\n\n\nInterviews\nShort, focused Q&A with builders and researchers in AI evaluation.\n\nNo interviews published yet."
+  },
+  {
+    "objectID": "frameworks/comparison-observable.html",
+    "href": "frameworks/comparison-observable.html",
+    "title": "Tool Comparison (ObservableJS Experimental version)",
+    "section": "",
+    "text": "3591\n\n\n\ntools = FileAttachment(\"../data/tools.json\").json()\n\n\n\n\n\n\n\ncolumns = FileAttachment(\"../data/tool-comparison/columns.json\").json()\n\n\n\n\n\n\n\nviewof answers = Inputs.form({\n  useCase: Inputs.select(\n    [\"RAG\", \"Agents\", \"Chatbot\", \"Classification\", \"I don't know yet\"],\n    {label: \"What are you evaluating?\"}\n  ),\n  experience: Inputs.select(\n    [\"New to evals\", \"Have used evals before\", \"Building eval infrastructure\"],\n    {label: \"Your eval experience?\"}\n  ),\n  teamSize: Inputs.select(\n    [\"Just me\", \"Small team (2-5)\", \"Larger team/org\"],\n    {label: \"Team size?\"}\n  )\n})\n\n\n\n\n\n\n\nrecommendation = {\n  const {useCase, experience} = answers;\n  if (experience === \"New to evals\") {\n    if (useCase === \"RAG\") {\n      return {\n        frameworks: [\"Ragas\", \"Promptfoo\"],\n        reason: \"Ragas has RAG-specific metrics out of the box. Promptfoo is great for learning eval basics.\"\n      };\n    }\n    if (useCase === \"Agents\") {\n      return {\n        frameworks: [\"DeepEval\", \"Promptfoo\"],\n        reason: \"Start with simple evaluation harnesses and build up from there.\"\n      };\n    }\n  }\n  return {\n    frameworks: [\"Promptfoo\", \"DeepEval\"],\n    reason: \"Both have good docs and active communities for getting started.\"\n  };\n}\n\n\n\n\n\n\n\nhtml`&lt;div class=\"recommendation\"&gt;\n  &lt;h3&gt;Recommended: ${recommendation.frameworks.join(\" or \")}&lt;/h3&gt;\n  &lt;p&gt;${recommendation.reason}&lt;/p&gt;\n&lt;/div&gt;`\n\n\n\n\n\n\n\ncolors = ({\n  yes: \"#d6f5d6\",\n  no: \"#f8d7da\",\n  unknown: \"#eeeeee\",\n  yesText: \"#145214\",\n  noText: \"#6b1b1b\",\n  unknownText: \"#666666\"\n})\n\nstyle = html`\n&lt;style&gt;\n.observable-table {\n  width: 100%;\n  border-collapse: collapse;\n  font-size: 0.95rem;\n}\n.observable-table th,\n.observable-table td {\n  border: 1px solid rgba(0,0,0,0.12);\n  padding: 6px 8px;\n  text-align: center;\n}\n.observable-table th:first-child,\n.observable-table td:first-child {\n  text-align: left;\n  position: sticky;\n  left: 0;\n  background: var(--bs-body-bg, #fff);\n  z-index: 1;\n}\n.observable-table .yes {\n  background: ${colors.yes};\n  color: ${colors.yesText};\n  font-weight: 700;\n}\n.observable-table .no {\n  background: ${colors.no};\n  color: ${colors.noText};\n  font-weight: 700;\n}\n.observable-table .unknown {\n  background: ${colors.unknown};\n  color: ${colors.unknownText};\n  font-weight: 700;\n}\n.observable-table thead th {\n  writing-mode: vertical-rl;\n  transform: rotate(180deg);\n  white-space: nowrap;\n  height: 140px;\n  vertical-align: bottom;\n  padding: 6px 4px;\n}\n&lt;/style&gt;\n`\n\nbuildTable = (cols, dataRows) =&gt; {\n  const table = html`&lt;table class=\"observable-table\"&gt;&lt;/table&gt;`;\n  const thead = html`&lt;thead&gt;&lt;/thead&gt;`;\n  const headerRow = html`&lt;tr&gt;&lt;/tr&gt;`;\n  for (const col of cols) {\n    headerRow.append(html`&lt;th&gt;${col}&lt;/th&gt;`);\n  }\n  thead.append(headerRow);\n\n  const tbody = html`&lt;tbody&gt;&lt;/tbody&gt;`;\n  for (const row of dataRows) {\n    const tr = html`&lt;tr&gt;&lt;/tr&gt;`;\n    for (const col of cols) {\n      const val = row[col] ?? \"?\";\n      let cls = \"\";\n      if (val === \"Y\") cls = \"yes\";\n      else if (val === \"N\") cls = \"no\";\n      else cls = \"unknown\";\n      tr.append(html`&lt;td class=${cls}&gt;${val}&lt;/td&gt;`);\n    }\n    tbody.append(tr);\n  }\n\n  table.append(thead);\n  table.append(tbody);\n  return table\n}\n\ncontextCols = columns.columns.context\ncoreCols = columns.columns.core\nfullCols = columns.columns.full\n\ncontainer = html`&lt;div&gt;&lt;/div&gt;`\ncontainer.append(style);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncontainer.append(html`&lt;h2&gt;Context&lt;/h2&gt;`);\n\n\n\n\n\n\n\ncontainer.append(buildTable(contextCols, tools.rows));\n\n\n\n\n\n\n\ncontainer.append(html`&lt;h2&gt;Core capabilities&lt;/h2&gt;`);\n\n\n\n\n\n\n\ncontainer.append(buildTable(coreCols, tools.rows));\n\n\n\n\n\n\n\ncontainer.append(html`&lt;h2&gt;Everything all at once (Experimental)&lt;/h2&gt;`);\n\n\n\n\n\n\n\ncontainer.append(buildTable(fullCols, tools.rows));\n\n\n\n\n\n\n\ncontainer"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "AI-Evals.io",
+    "section": "",
+    "text": "AI evals, explained for\n\n\nSoftware engineersProduct managersScientists (coding)Scientists (non-coding)Non-technical foundersEvals give you control, once you define them, you can move fast without regressions and cut through hype with proof.Evals make PoCs verifiable so you see real progress instead of one-off demos, and quality doesn't vanish over time.Evals reduce manual checking and keep experiments grounded, even when you use AI to move faster.Evals help you keep control and use AI tools with more confidence, even without deep coding skills.Evals are provable and auditable, letting you move fast while reducing risk across the org.\n\n\nCompare frameworks Join the community"
+  },
+  {
+    "objectID": "index.html#what-this-site-is",
+    "href": "index.html#what-this-site-is",
+    "title": "AI-Evals.io",
+    "section": "What this site is",
+    "text": "What this site is\n\nA compact, honest guide to LLM evals and tooling.\nA place to learn by example and avoid hype‑driven decisions.\n\nRead more in About."
+  },
+  {
+    "objectID": "index.html#what-this-site-is-not",
+    "href": "index.html#what-this-site-is-not",
+    "title": "AI-Evals.io",
+    "section": "What this site is not",
+    "text": "What this site is not\n\nA marketing page for any single tool."
+  },
+  {
+    "objectID": "methodology-long.html",
+    "href": "methodology-long.html",
+    "title": "AI-Evals.io",
+    "section": "",
+    "text": "This site prioritizes practical, reproducible evals over marketing claims.\n\nEvidence tags: proven means I validated it, docs means I only saw it in documentation.\n\nIf you spot an error or have better evidence, open a GitHub issue or send a note."
+  },
+  {
+    "objectID": "methodology-long.html#methodology",
+    "href": "methodology-long.html#methodology",
+    "title": "AI-Evals.io",
+    "section": "",
+    "text": "This site prioritizes practical, reproducible evals over marketing claims.\n\nEvidence tags: proven means I validated it, docs means I only saw it in documentation.\n\nIf you spot an error or have better evidence, open a GitHub issue or send a note."
+  },
+  {
+    "objectID": "privacy.html",
+    "href": "privacy.html",
+    "title": "Privacy",
+    "section": "",
+    "text": "This site is intentionally minimal."
+  },
+  {
+    "objectID": "privacy.html#what-we-do-not-track",
+    "href": "privacy.html#what-we-do-not-track",
+    "title": "Privacy",
+    "section": "What we do not track",
+    "text": "What we do not track\n\nNo third‑party analytics trackers.\nNo behavioral profiling or ad retargeting."
+  },
+  {
+    "objectID": "privacy.html#what-we-do-use",
+    "href": "privacy.html#what-we-do-use",
+    "title": "Privacy",
+    "section": "What we do use",
+    "text": "What we do use\n\nQuarto and its standard JS/CSS assets to render the site.\nA newsletter signup form (Buttondown) when enabled. Buttondown stores your email so you can receive updates and unsubscribe any time."
+  },
+  {
+    "objectID": "privacy.html#external-links",
+    "href": "privacy.html#external-links",
+    "title": "Privacy",
+    "section": "External links",
+    "text": "External links\n\nSome links go to third‑party sites (GitHub, Medium, LinkedIn, etc.). Their privacy policies apply once you leave this site."
+  },
+  {
+    "objectID": "privacy.html#contact",
+    "href": "privacy.html#contact",
+    "title": "Privacy",
+    "section": "Contact",
+    "text": "Contact\nIf you have privacy questions, open a GitHub issue or contact us via the newsletter reply link."
+  }
+]

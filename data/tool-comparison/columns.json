@@ -1,0 +1,53 @@
+{
+  "columns": {
+    "context": [
+      "name",
+      "authoring_format",
+      "runtime_language",
+      "is_open_source",
+      "can_self_host",
+      "url"
+    ],
+    "core": [
+      "name",
+      "deterministic_tests",
+      "caching",
+      "tool_call_validation",
+      "run_comparison",
+      "opentelemetry_tracing",
+      "chat_threads",
+      "red_teaming",
+      "model_comparison",
+      "web_ui",
+      "url"
+    ],
+    "full": [
+      "name",
+      "authoring_format",
+      "runtime_language",
+      "is_open_source",
+      "can_self_host",
+      "deterministic_tests",
+      "caching",
+      "tool_call_validation",
+      "run_comparison",
+      "opentelemetry_tracing",
+      "chat_threads",
+      "red_teaming",
+      "model_comparison",
+      "web_ui",
+      "url"
+    ],
+    "features": [
+      "deterministic_tests",
+      "caching",
+      "tool_call_validation",
+      "run_comparison",
+      "opentelemetry_tracing",
+      "chat_threads",
+      "red_teaming",
+      "model_comparison",
+      "web_ui"
+    ]
+  }
+}
