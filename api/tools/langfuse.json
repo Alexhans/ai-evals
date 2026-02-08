@@ -1,0 +1,44 @@
+{
+  "version": "1.0",
+  "id": "langfuse",
+  "name": "Langfuse",
+  "url": "https://langfuse.com",
+  "authoring_format": [
+    "PY"
+  ],
+  "runtime_language": [
+    "TS"
+  ],
+  "license": {
+    "status": "proven",
+    "value": true,
+    "explanation": null
+  },
+  "self_hosting": {
+    "status": "proven",
+    "value": true,
+    "explanation": null
+  },
+  "features": {
+    "deterministic_tests": {
+      "status": "unknown",
+      "value": null,
+      "explanation": null
+    },
+    "caching": {
+      "status": "unknown",
+      "value": null,
+      "explanation": null
+    },
+    "tool_call_validation": {
+      "status": "unknown",
+      "value": null,
+      "explanation": null
+    },
+    "run_comparison": {
+      "status": "unknown",
+      "value": null,
+      "explanation": null
+    }
+  }
+}

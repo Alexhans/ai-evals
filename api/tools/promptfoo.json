@@ -1,0 +1,64 @@
+{
+  "version": "1.0",
+  "id": "promptfoo",
+  "name": "Promptfoo",
+  "url": "https://promptfoo.dev",
+  "authoring_format": [
+    "YML"
+  ],
+  "runtime_language": [
+    "TS"
+  ],
+  "license": {
+    "status": "proven",
+    "value": true,
+    "explanation": null
+  },
+  "self_hosting": {
+    "status": "proven",
+    "value": true,
+    "explanation": null
+  },
+  "features": {
+    "deterministic_tests": {
+      "status": "proven",
+      "value": true,
+      "explanation": null
+    },
+    "caching": {
+      "status": "proven",
+      "value": true,
+      "explanation": null
+    },
+    "tool_call_validation": {
+      "status": "partial",
+      "value": true,
+      "explanation": null
+    },
+    "run_comparison": {
+      "status": "proven",
+      "value": true,
+      "explanation": null
+    },
+    "chat_threads": {
+      "status": "partial_docs",
+      "value": true,
+      "explanation": null
+    },
+    "red_teaming": {
+      "status": "docs",
+      "value": true,
+      "explanation": null
+    },
+    "model_comparison": {
+      "status": "docs",
+      "value": true,
+      "explanation": null
+    },
+    "web_ui": {
+      "status": "proven",
+      "value": true,
+      "explanation": null
+    }
+  }
+}

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – AI-Evals.io</title>
+<title>Eval-Ception: Testing an Agent That Speaks for You – AI-Evals.io</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,31 +20,66 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a87d830125dba96ce9f7d55a1014f349.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-e7ab87af057c297da0378775f9f838e3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-a87d830125dba96ce9f7d55a1014f349.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a87d830125dba96ce9f7d55a1014f349.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-e7ab87af057c297da0378775f9f838e3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-a87d830125dba96ce9f7d55a1014f349.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,10 +107,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="./assets/js/comparison-table.js"></script>
+<script src="../assets/js/comparison-table.js"></script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -256,7 +291,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">AI-Evals.io</span>
     </a>
   </div>
@@ -267,29 +302,29 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./frameworks/comparison.html"> 
-<span class="menu-text">Tool Comparison</span></a>
+    <a class="nav-link" href="../tools/compare.html"> 
+<span class="menu-text">Compare Tools</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cookbook/index.html"> 
+    <a class="nav-link" href="../cookbook/index.html"> 
 <span class="menu-text">Cookbook</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resources/index.html"> 
-<span class="menu-text">Evals Resources</span></a>
+    <a class="nav-link" href="../resources/index.html"> 
+<span class="menu-text">Links</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./community/index.html"> 
+    <a class="nav-link" href="../community/index.html"> 
 <span class="menu-text">Community</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="../about/index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/Alexhans/ai-evals"> <i class="bi bi-github" role="img" aria-label="GitHub">
+    <a class="nav-link" href="https://github.com/Alexhans/eval-ception"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -312,7 +347,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Eval-Ception: Testing an Agent That Speaks for You</h1>
+<p class="subtitle lead">Using Promptfoo to evaluate whether an AI agent can represent your organization</p>
 </div>
 
 
@@ -329,71 +365,178 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="what-this-is" class="level2">
-<h2 class="anchored" data-anchor-id="what-this-is">What This Is</h2>
-<p>AI-Evals.io helps practitioners choose LLM evaluation frameworks through honest comparison, based on hands-on testing and documentation research, not marketing claims.</p>
-<p>The framework comparison table shows what actually works, what’s documented but unverified, and what we haven’t tested yet. No vendor hype. No assumptions.</p>
+<p>This is a hands-on tutorial. You’ll learn about evals by running them yourself - against this very site. <a href="https://github.com/Alexhans/eval-ception">Impatient? Jump to the repo.</a></p>
+<section id="the-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem">The Problem</h2>
+<p>You want an AI agent to answer questions about your product, your docs, your company. But how do you know it’s ready? That it won’t hallucinate features, miss key details, or mislead your users?</p>
+<p>You give it an exam.</p>
+<p>Think of it like hiring a spokesperson. Before they represent your organization publicly, you verify they understand the domain well enough not to embarrass you. Passing doesn’t make them an expert - it makes them <em>qualified to start</em>.</p>
+<p>This applies to any agent that acts on your behalf - not just chatbots. An agent that responds to production incidents at 3am, sends emails to your clients, or submits regulatory filings.</p>
+<p>If these sound scary, I agree. Evals are a first step to understanding the risk and whether it’s manageable. Building a qualification exam is the point.</p>
 </section>
-<section id="who-built-it" class="level2">
-<h2 class="anchored" data-anchor-id="who-built-it">Who Built it</h2>
-<p>Built by <strong><a href="https://linktr.ee/alex.guglielmone.nemi">Alex Guglielmone Nemi</a></strong></p>
-<p><a href="https://www.linkedin.com/in/alex-guglielmone-nemi/">LinkedIn</a> • <a href="https://github.com/alexhans">GitHub</a> • <a href="https://buttondown.com/ai-evals">Newsletter</a></p>
+<section id="what-youll-build" class="level2">
+<h2 class="anchored" data-anchor-id="what-youll-build">What You’ll Build</h2>
+<p>In this tutorial, you treat <strong>ai-evals.io</strong> as the organization and build an exam for agents that want to speak on its behalf. The agent crawls the site, reads the content, and answers questions. <a href="https://www.promptfoo.dev/">Promptfoo</a> (one of several <a href="../tools/compare.html">eval tools</a>) checks whether the answers are correct.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This isn’t really about ai-evals.io. <strong>You could do exactly this for your own site, product, or docs.</strong> Swap the URL, write questions that matter to your domain, and you have a qualification gate for any agent that claims to represent you.</p>
+</div>
+</div>
+<p>The agent is a black box - it could be a local model running on Ollama, Claude, GPT, or your own custom setup. The exam doesn’t care how the agent is built. It only cares whether the answers are right.</p>
 </section>
-<section id="why" class="level2">
-<h2 class="anchored" data-anchor-id="why">Why</h2>
+<section id="how-it-works" class="level2">
+<h2 class="anchored" data-anchor-id="how-it-works">How It Works</h2>
+<pre><code>Question  →  [Your Agent]  →  Answer  →  [Eval Tool (Promptfoo)]  →  Pass/Fail</code></pre>
+<p>Two pieces, cleanly separated:</p>
+<ol type="1">
+<li><p><strong>The agent</strong> receives a question and produces an answer. It could be anything - a CLI tool, a Python script, a hosted API. The eval doesn’t care.</p></li>
+<li><p><strong>The eval</strong> receives the agent’s answer and checks it. Promptfoo supports two kinds of checks:</p>
 <ul>
-<li>For my own benefit and because I think evals and testing are pivotal to automation: You rely on what you can’t test.</li>
-<li>To help the open source community</li>
-<li>To help different role families pick the right tools for them.</li>
-<li>To ground discussions on specifics and prove them.</li>
-</ul>
+<li><strong>Deterministic</strong> - does the answer contain “Alex”? Does it say “yes”? Simple keyword matching, no LLM needed. <a href="https://alexhans.github.io/posts/series/evals/error-compounding-genai-systems-approach.html">When possible, prefer these</a> - they don’t compound errors.</li>
+<li><strong>LLM-as-judge</strong> - is this answer a reasonable explanation of the site’s methodology? A second model judges the quality.</li>
+</ul></li>
+</ol>
+<p>The agent and the eval never talk to each other. The agent doesn’t know it’s being tested. This is the point - you’re testing what it would actually say to a user.</p>
 </section>
-<section id="principles" class="level2">
-<h2 class="anchored" data-anchor-id="principles">Principles</h2>
+<section id="choose-your-agent" class="level2">
+<h2 class="anchored" data-anchor-id="choose-your-agent">Choose Your Agent</h2>
+<p>The exam is the same regardless of which agent you use. Pick the one that matches how you work.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>I use <code>pip</code> in the examples below. I prefer <code>hatch</code> with <code>uv</code> and the repo supports those too.</p>
+</div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">CLI Agent (Claude, Codex)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Local Model (Ollama)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Custom Agent</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>You already use a CLI coding agent like Claude Code, Codex, or OpenCode. You’ll point the eval at your CLI and it will ask the questions directly.</p>
+<p><strong>Best for:</strong> people who already have a CLI agent installed and want to test it as-is.</p>
+<p><strong>Prerequisites:</strong></p>
 <ul>
-<li><strong>Quality over assumptions</strong>: I’d rather have “unknown” than over-populate</li>
-<li><strong>Practitioner-focused</strong>: We compare based on real production needs, not theoretical features</li>
-<li><strong>Tool-agnostic</strong>: Tools come and go. This may even help many improve at the same time.</li>
-<li><strong>Living resource</strong>: The comparison evolves as we test more frameworks and features</li>
+<li><a href="https://docs.anthropic.com/en/docs/claude-code">Claude Code</a>, <a href="https://github.com/openai/codex">Codex</a>, or <a href="https://github.com/opencode-ai/opencode">OpenCode</a> installed</li>
+<li>Node.js (for Promptfoo)</li>
+<li>Python 3.10+</li>
 </ul>
-</section>
-<section id="methodology" class="level2">
-<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
-<div class="eval-legend">
-<p><span class="eval-chip yes proven">Y, proven</span> <span class="eval-chip yes doc">y, docs</span> <span class="eval-explain">Proven: Tested and proven it works. Docs: Mentioned in the docs but not proven.</span> <span class="eval-chip no proven">N, proven</span> <span class="eval-chip no doc">n, docs</span> <span class="eval-explain">Proven: Tested and proven it does not work. Docs: Mentioned in the docs but not proven.</span> <span class="eval-chip partial">P, partial</span> <span class="eval-chip partial doc">p, docs</span> <span class="eval-explain">Proven: Tested limited support or coverage.</span> <span class="eval-explain">Docs: Limited support mentioned in docs but not proven.</span></p>
-<p><span class="eval-chip unknown">?, unknown</span> <span class="eval-explain">No information</span></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/Alexhans/eval-ception</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> eval-ception</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> promptfoo/requirements.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>You want to run everything locally. The agent uses Playwright to crawl the site and a local model to reason about the content. No API keys, no cloud calls.</p>
+<p><strong>Best for:</strong> people who care about local models, privacy, or want to experiment without cost.</p>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li><a href="https://ollama.com/">Ollama</a> or <a href="https://github.com/ggml-org/llama.cpp">llama.cpp</a> installed and running</li>
+<li>Node.js (for Promptfoo)</li>
+<li>Python 3.10+</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">ollama</span> pull qwen3:8b        <span class="co"># the agent</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">ollama</span> pull deepseek-r1:14b  <span class="co"># the judge (for LLM-as-judge tests)</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/Alexhans/eval-ception</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> eval-ception</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> agent</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="ex">playwright</span> install <span class="at">--with-deps</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ..</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>You build your own agents or already have a service running. You’ll write a small provider that Promptfoo calls with each question - it could call your local code, or hit an HTTP endpoint you already have deployed.</p>
+<p><strong>Best for:</strong> developers building agents, or teams who already have a chatbot/assistant endpoint they want to test.</p>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Node.js (for Promptfoo)</li>
+<li>Python 3.10+</li>
+<li>Your agent code</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/Alexhans/eval-ception</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> eval-ception</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>See <code>promptfoo/provider.py</code> for the interface your provider needs to implement - it’s a single <code>call_api(prompt, options, context)</code> function that returns <code>{"output": "your answer"}</code>.</p>
+</div>
+</div>
 </div>
 </section>
-<section id="methodology-1" class="level2">
-<h2 class="anchored" data-anchor-id="methodology-1">Methodology</h2>
-<p>This site prioritizes practical, reproducible evals over marketing claims.</p>
-<ul>
-<li>Evidence tags: <code>proven</code> means I validated it, <code>docs</code> means I only saw it in documentation.</li>
-</ul>
-<p>If you spot an error or have better evidence, open a GitHub issue or send a note.</p>
-<!-- We test frameworks ourselves where possible (✅ Confirmed). For features we haven't tested, we clearly mark them as documented (📚 Per docs) or unknown (❓). Partial support (🟡) means the feature exists but with significant limitations. -->
-<!-- The comparison is a living resource. If you spot errors or want to contribute, [open an issue on GitHub](link). -->
+<section id="the-exam-promptfooconfig.yaml" class="level2">
+<h2 class="anchored" data-anchor-id="the-exam-promptfooconfig.yaml">The Exam: promptfooconfig.yaml</h2>
+<p>This is the exam. Open <code>promptfoo/promptfooconfig.yaml</code> and you’ll see:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">providers</span><span class="kw">:</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">id</span><span class="kw">:</span><span class="at"> </span><span class="st">"python:provider.py"</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">label</span><span class="kw">:</span><span class="at"> </span><span class="st">"ollama_agent"</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">prompts</span><span class="kw">:</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="st">"{{question}}"</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="fu">tests</span><span class="kw">:</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="co">  # Deterministic: does it know who made the site?</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">vars</span><span class="kw">:</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">question</span><span class="kw">:</span><span class="at"> </span><span class="st">"Who created this website?"</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">assert</span><span class="kw">:</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">type</span><span class="kw">:</span><span class="at"> icontains</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">value</span><span class="kw">:</span><span class="at"> </span><span class="st">"Alex"</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">type</span><span class="kw">:</span><span class="at"> icontains</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">value</span><span class="kw">:</span><span class="at"> </span><span class="st">"Guglielmone"</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="co">  # Deterministic: does it know what's open source?</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">vars</span><span class="kw">:</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">question</span><span class="kw">:</span><span class="at"> </span><span class="st">"What frameworks are open source?"</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">assert</span><span class="kw">:</span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">type</span><span class="kw">:</span><span class="at"> icontains</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">value</span><span class="kw">:</span><span class="at"> </span><span class="st">"promptfoo"</span></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">type</span><span class="kw">:</span><span class="at"> not-icontains</span></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">value</span><span class="kw">:</span><span class="at"> </span><span class="st">"Braintrust"</span></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="co">  # LLM-as-judge: can it explain the methodology?</span></span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">vars</span><span class="kw">:</span></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">question</span><span class="kw">:</span><span class="at"> </span><span class="st">"What methodology does this website use to evaluate frameworks?"</span></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">assert</span><span class="kw">:</span></span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">type</span><span class="kw">:</span><span class="at"> llm-rubric</span></span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a><span class="fu">        value</span><span class="kw">: </span><span class="ch">&gt;</span></span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>          The answer should explain that the site uses evidence-based</span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>          evaluation with distinct tags: 'proven' means tested and</span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>          validated, 'docs' means only mentioned in documentation</span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>          but not verified.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Each test is a question with assertions. Deterministic assertions (<code>icontains</code>, <code>not-icontains</code>) are fast, free, and unambiguous. LLM-as-judge assertions (<code>llm-rubric</code>) handle questions where the “right answer” can be phrased many ways.</p>
 </section>
-<section id="platform-choices" class="level2">
-<h2 class="anchored" data-anchor-id="platform-choices">Platform Choices</h2>
-<ul>
-<li><strong>Quarto</strong>: Separates data from presentation, making updates easy and transparent</li>
-<li><strong>Buttondown</strong>: Privacy-respecting newsletter platform with easy unsubscribe and data export</li>
-<li><strong>Open source</strong>: Full source code will be available on GitHub for transparency and contributions before <time datetime="2026-03-01">Mar 2026</time></li>
-</ul>
-<p><a href="./privacy.html">More on privacy</a></p>
+<section id="run-it" class="level2">
+<h2 class="anchored" data-anchor-id="run-it">Run It</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> promptfoo</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">npx</span> promptfoo eval</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Promptfoo runs each question through the agent, collects the answers, and checks the assertions. When it’s done:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">npx</span> promptfoo view</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This opens a local dashboard where you can see every question, the agent’s answer, and whether it passed or failed.</p>
 </section>
-<section id="roadmap" class="level2">
-<h2 class="anchored" data-anchor-id="roadmap">Roadmap</h2>
-<ul>
-<li>Expand framework coverage</li>
-<li>Ensure programmatic access to the data is easy</li>
-<li>Add interactive decision tree to help users choose frameworks</li>
-<li>Create/Share practical cookbooks for common eval patterns</li>
-<li>Build regional communities around evaluation best practices</li>
-</ul>
-<hr>
-<p><strong>Have feedback?</strong> <a href="https://linktr.ee/alex.guglielmone.nemi">Reach out</a> or <a href="https://buttondown.com/ai-evals">join the newsletter</a>.</p>
+<section id="what-youll-see" class="level2">
+<h2 class="anchored" data-anchor-id="what-youll-see">What You’ll See</h2>
+<p>In our runs, the agent scored <strong>4/6 (66.7%)</strong> on its first try. That’s a failing grade - and that’s useful information.</p>
+<p>You’ll probably look at some of the tests and think “that assertion is wrong” or “I’d ask the question differently” or “this should check for structured output, not just keywords”. Good. That instinct is the whole point. You’re already thinking about what “correct” means for this domain - and that’s exactly what building evals teaches you.</p>
+<p>How would you improve the exam? Change a test case, run it again, and see what happens.</p>
+</section>
+<section id="why-this-gives-you-control" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-gives-you-control">Why This Gives You Control</h2>
+<p><strong>Quality.</strong> You just scored 4/6. Now swap <code>qwen3:8b</code> for <code>llama3:8b</code> and run it again. Did the score go up? You just compared two models in 5 minutes, no manual review.</p>
+<p><strong>Regressions.</strong> Your LLM provider quietly updates their model next Tuesday. You wouldn’t know - but your eval would. Run it on a schedule and the regression shows up before your users notice.</p>
+<p><strong>Learning from mistakes.</strong> A customer reports your agent got something wrong? Add the question and the correct answer as a new test case. That mistake becomes a regression test - it can’t silently happen again.</p>
+<p><strong>Cost.</strong> Each run can tell you how many tokens it consumed. Multiply by your rate and you know what running at scale will cost before you commit.</p>
+<p><strong>Privacy.</strong> You ran the local model path? Everything stayed on your machine. The eval, the agent, the judge - no data left your network.</p>
+<p>This is what control looks like. Not trusting that it works, but knowing when it doesn’t.</p>
 
 
 </section>
@@ -829,7 +972,7 @@ ul.task-list li input[type="checkbox"] {
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="./privacy.html">
+    <a class="nav-link" href="../privacy/index.html">
 <p>Privacy</p>
 </a>
   </li>  

@@ -24,8 +24,8 @@
       "runtime_language": "PY",
       "is_open_source": "Y",
       "can_self_host": "Y",
-      "deterministic_tests": "?",
-      "caching": "?",
+      "deterministic_tests": "Y",
+      "caching": "N",
       "tool_call_validation": "?",
       "run_comparison": "?"
     },

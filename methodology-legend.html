@@ -267,8 +267,8 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./frameworks/comparison.html"> 
-<span class="menu-text">Tool Comparison</span></a>
+    <a class="nav-link" href="./tools/compare.html"> 
+<span class="menu-text">Compare Tools</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./cookbook/index.html"> 
@@ -276,20 +276,20 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./resources/index.html"> 
-<span class="menu-text">Evals Resources</span></a>
+<span class="menu-text">Links</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./community/index.html"> 
 <span class="menu-text">Community</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="./about/index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/Alexhans/ai-evals"> <i class="bi bi-github" role="img" aria-label="GitHub">
+    <a class="nav-link" href="https://github.com/Alexhans/eval-ception"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -314,8 +314,51 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="eval-legend">
-<p><span class="eval-chip yes proven">Y, proven</span> <span class="eval-chip yes doc">y, docs</span> <span class="eval-explain">Proven: Tested and proven it works. Docs: Mentioned in the docs but not proven.</span> <span class="eval-chip no proven">N, proven</span> <span class="eval-chip no doc">n, docs</span> <span class="eval-explain">Proven: Tested and proven it does not work. Docs: Mentioned in the docs but not proven.</span> <span class="eval-chip partial">P, partial</span> <span class="eval-chip partial doc">p, docs</span> <span class="eval-explain">Proven: Tested limited support or coverage.</span> <span class="eval-explain">Docs: Limited support mentioned in docs but not proven.</span></p>
-<p><span class="eval-chip unknown">?, unknown</span> <span class="eval-explain">No information</span></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="eval-chip yes proven">Y</span></td>
+<td>Yes - I tested it and it works</td>
+</tr>
+<tr class="even">
+<td><span class="eval-chip yes doc">y</span></td>
+<td>Yes - docs say so, I haven’t verified</td>
+</tr>
+<tr class="odd">
+<td><span class="eval-chip no proven">N</span></td>
+<td>No - I tested it, not supported<sup>(*)</sup></td>
+</tr>
+<tr class="even">
+<td><span class="eval-chip no doc">n</span></td>
+<td>No - docs say so, I haven’t verified<sup>(*)</sup></td>
+</tr>
+<tr class="odd">
+<td><span class="eval-chip partial">P</span></td>
+<td>Partial - I tested it, limited support</td>
+</tr>
+<tr class="even">
+<td><span class="eval-chip partial doc">p</span></td>
+<td>Partial - docs say so, I haven’t verified</td>
+</tr>
+<tr class="odd">
+<td><span class="eval-chip unknown">?</span></td>
+<td>Unknown - no information</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><sup>(*)</sup> “Not supported” may mean it’s not a built-in feature. In some cases you could build it yourself - the distinction is whether the tool does it for you out of the box.</li>
+</ul>
 </div>
 
 
@@ -751,7 +794,7 @@ ul.task-list li input[type="checkbox"] {
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="./privacy.html">
+    <a class="nav-link" href="./privacy/index.html">
 <p>Privacy</p>
 </a>
   </li>  

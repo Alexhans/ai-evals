@@ -1,0 +1,44 @@
+{
+  "version": "1.0",
+  "id": "ragas",
+  "name": "Ragas",
+  "url": "https://github.com/explodinggradients/ragas",
+  "authoring_format": [
+    "PY"
+  ],
+  "runtime_language": [
+    "PY"
+  ],
+  "license": {
+    "status": "proven",
+    "value": true,
+    "explanation": null
+  },
+  "self_hosting": {
+    "status": "proven",
+    "value": true,
+    "explanation": null
+  },
+  "features": {
+    "deterministic_tests": {
+      "status": "unknown",
+      "value": null,
+      "explanation": null
+    },
+    "caching": {
+      "status": "unknown",
+      "value": null,
+      "explanation": null
+    },
+    "tool_call_validation": {
+      "status": "unknown",
+      "value": null,
+      "explanation": null
+    },
+    "run_comparison": {
+      "status": "unknown",
+      "value": null,
+      "explanation": null
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "version": "1.0",
+  "id": "arize-phoenix",
+  "name": "Arize Phoenix",
+  "url": "https://github.com/Arize-ai/phoenix",
+  "authoring_format": [
+    "PY"
+  ],
+  "runtime_language": [
+    "PY"
+  ],
+  "license": {
+    "status": "proven",
+    "value": true,
+    "explanation": null
+  },
+  "self_hosting": {
+    "status": "proven",
+    "value": true,
+    "explanation": null
+  },
+  "features": {
+    "deterministic_tests": {
+      "status": "proven",
+      "value": true,
+      "explanation": null
+    },
+    "caching": {
+      "status": "proven",
+      "value": false,
+      "explanation": null
+    },
+    "tool_call_validation": {
+      "status": "unknown",
+      "value": null,
+      "explanation": null
+    },
+    "run_comparison": {
+      "status": "unknown",
+      "value": null,
+      "explanation": null
+    }
+  }
+}

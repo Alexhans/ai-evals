@@ -1,0 +1,44 @@
+{
+  "version": "1.0",
+  "id": "braintrust",
+  "name": "Braintrust",
+  "url": "https://www.braintrust.dev",
+  "authoring_format": [
+    "PY"
+  ],
+  "runtime_language": [
+    "TS"
+  ],
+  "license": {
+    "status": "proven",
+    "value": false,
+    "explanation": null
+  },
+  "self_hosting": {
+    "status": "proven",
+    "value": false,
+    "explanation": null
+  },
+  "features": {
+    "deterministic_tests": {
+      "status": "unknown",
+      "value": null,
+      "explanation": null
+    },
+    "caching": {
+      "status": "unknown",
+      "value": null,
+      "explanation": null
+    },
+    "tool_call_validation": {
+      "status": "unknown",
+      "value": null,
+      "explanation": null
+    },
+    "run_comparison": {
+      "status": "unknown",
+      "value": null,
+      "explanation": null
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "$defs": {
+    "FeatureSpec": {
+      "description": "Single feature status for a tool.",
+      "properties": {
+        "status": {
+          "description": "Source of truth for this feature",
+          "enum": [
+            "proven",
+            "docs",
+            "partial",
+            "partial_docs",
+            "unknown"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "True or False if status is proven or docs",
+          "title": "Value"
+        },
+        "explanation": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Short note explaining the value or caveat",
+          "title": "Explanation"
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "title": "FeatureSpec",
+      "type": "object"
+    }
+  },
+  "description": "Schema for a tool definition in YAML.",
+  "properties": {
+    "name": {
+      "description": "Tool name",
+      "title": "Name",
+      "type": "string"
+    },
+    "url": {
+      "description": "Primary URL",
+      "title": "Url",
+      "type": "string"
+    },
+    "authoring_format": {
+      "description": "Primary authoring format(s)",
+      "items": {
+        "type": "string"
+      },
+      "title": "Authoring Format",
+      "type": "array"
+    },
+    "runtime_language": {
+      "description": "Primary runtime language(s)",
+      "items": {
+        "type": "string"
+      },
+      "title": "Runtime Language",
+      "type": "array"
+    },
+    "license": {
+      "$ref": "#/$defs/FeatureSpec",
+      "description": "Open source license status"
+    },
+    "self_hosting": {
+      "$ref": "#/$defs/FeatureSpec",
+      "description": "Self hosting availability"
+    },
+    "features": {
+      "additionalProperties": {
+        "$ref": "#/$defs/FeatureSpec"
+      },
+      "description": "Feature map",
+      "title": "Features",
+      "type": "object"
+    }
+  },
+  "required": [
+    "name",
+    "url",
+    "authoring_format",
+    "runtime_language",
+    "license",
+    "self_hosting"
+  ],
+  "title": "ToolSpec",
+  "type": "object"
+}

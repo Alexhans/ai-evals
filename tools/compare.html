@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Evals Resources – AI-Evals.io</title>
+<title>Compare Tools – AI-Evals.io</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,10 +20,45 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -73,12 +108,15 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <script src="../assets/js/comparison-table.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -267,7 +305,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../tools/compare.html"> 
+    <a class="nav-link active" href="../tools/compare.html" aria-current="page"> 
 <span class="menu-text">Compare Tools</span></a>
   </li>  
   <li class="nav-item">
@@ -275,7 +313,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Cookbook</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../resources/index.html" aria-current="page"> 
+    <a class="nav-link" href="../resources/index.html"> 
 <span class="menu-text">Links</span></a>
   </li>  
   <li class="nav-item">
@@ -305,14 +343,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Evals Resources</h1>
+<h1 class="title">Compare Tools</h1>
 </div>
 
 
@@ -328,35 +367,397 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-
-<div id="1f088030" class="cell" data-execution_count="2">
-<div class="cell-output cell-output-display cell-output-markdown">
-<section id="blogs" class="level2">
-<h2 class="anchored" data-anchor-id="blogs">Blogs</h2>
-<ul>
-<li>Aparna Dhinakaran - <a href="https://aparnadhinak.medium.com/">Medium</a> · <a href="https://www.linkedin.com/newsletters/the-ai-engineer-7352062200636665856/">The AI Engineer (Newsletter)</a> - Co-founder and CPO (Chief Product Officer) of Arize AI; writes about evals and tooling. Formerly Cornell CV PhD, Uber ML, UC Berkeley AI Research. (updated 2026-02-01)</li>
-<li>Ian W. (Promptfoo creator) - <a href="https://www.ianww.com/blog">Blog</a> - Posts by the creator of Promptfoo, often about evals and tooling. (updated 2026-02-01)</li>
-<li>Eugene Yan - <a href="https://eugeneyan.com/">Blog</a> - Practical ML/AI writing with useful evaluation and production insights. (updated 2026-02-01)</li>
-<li>Hamel Husain - <a href="https://hamel.dev/">Blog</a> - Machine learning engineer with 20+ years experience; independent consultant helping companies build AI products. Formerly at Airbnb and GitHub; open-source contributor. (updated 2026-02-01)</li>
-</ul>
-</section>
-<section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">Resources</h2>
-<ul>
-<li>Vivek Menon - <a href="https://github.com/Vvkmnn/awesome-ai-eval">Awesome AI Eval (GitHub)</a> - Curated list of AI evaluation tools, papers, and resources. (updated 2026-02-01)</li>
-</ul>
-</section>
-<section id="communities" class="level2">
-<h2 class="anchored" data-anchor-id="communities">Communities</h2>
-<ul>
-<li>Hacker News - <a href="https://hn.algolia.com/?query=evals&amp;sort=byDate">Search: evals</a> - Live HN search results for evals discussions. (updated 2026-02-01)</li>
-<li>Reddit - <a href="https://www.reddit.com/r/LocalLLaMA/">r/LocalLLaMA</a> - Local-first AI community with lots of eval, tooling, and control discussions. (updated 2026-02-01)</li>
-</ul>
-</section>
+<nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Tables</h2>
+   
+  <ul>
+  <li><a href="#context" id="toc-context">Context</a></li>
+  <li><a href="#core-capabilities" id="toc-core-capabilities">Core capabilities</a></li>
+  <li><a href="#everything-all-at-once" id="toc-everything-all-at-once">Everything all at once</a></li>
+  <li><a href="#labels" id="toc-labels">Labels</a></li>
+  <li><a href="#api" id="toc-api">API</a>
+  <ul>
+  <li><a href="#example-usage" id="toc-example-usage">Example Usage</a></li>
+  </ul></li>
+  </ul>
+</nav>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<p>This comparison is a work in progress. I’m figuring out the best way to present this information for different audiences - some details may be too much, some too nuanced. A crude baseline is still useful: it helps start to understand and categorize a relatively new space. <a href="https://caniuse.com/">caniuse.com</a> also started somewhere. Feedback extremely welcome - <a href="../community/">get in touch</a>.</p>
+</div>
+</div>
+<!-- data-watch: 1769902741 -->
+<div class="comparison-table">
+
+</div>
+<section id="context" class="level2">
+<h2 class="anchored" data-anchor-id="context">Context</h2>
+<div class="comparison-table">
+<div id="0620e5bc" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<!--| quarto-html-table-processing: none -->
+<table id="itables_fac12bdf_926f_4e13_b9b5_06f9e0874363"><tbody><tr>
+    <td style="vertical-align:middle; text-align:left">
+    <a href="https://mwouts.github.io/itables/"><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="64" viewbox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
+    <g style="fill:#d9d7fc">
+        <path d="M100,400H500V357H100Z"></path>
+        <path d="M100,300H400V257H100Z"></path>
+        <path d="M0,200H400V157H0Z"></path>
+        <path d="M100,100H500V57H100Z"></path>
+        <path d="M100,350H500V307H100Z"></path>
+        <path d="M100,250H400V207H100Z"></path>
+        <path d="M0,150H400V107H0Z"></path>
+        <path d="M100,50H500V7H100Z"></path>
+    </g>
+    <g style="fill:#1a1366;stroke:#1a1366;">
+   <rect x="100" y="7" width="400" height="43">
+    <animate attributename="width" values="0;400;0" dur="5s" repeatcount="indefinite"></animate>
+      <animate attributename="x" values="100;100;500" dur="5s" repeatcount="indefinite"></animate>
+  </rect>
+        <rect x="0" y="107" width="400" height="43">
+    <animate attributename="width" values="0;400;0" dur="3.5s" repeatcount="indefinite"></animate>
+    <animate attributename="x" values="0;0;400" dur="3.5s" repeatcount="indefinite"></animate>
+  </rect>
+        <rect x="100" y="207" width="300" height="43">
+    <animate attributename="width" values="0;300;0" dur="3s" repeatcount="indefinite"></animate>
+    <animate attributename="x" values="100;100;400" dur="3s" repeatcount="indefinite"></animate>
+  </rect>
+        <rect x="100" y="307" width="400" height="43">
+    <animate attributename="width" values="0;400;0" dur="4s" repeatcount="indefinite"></animate>
+      <animate attributename="x" values="100;100;500" dur="4s" repeatcount="indefinite"></animate>
+  </rect>
+        <g style="fill:transparent;stroke-width:8; stroke-linejoin:round" rx="5">
+            <g transform="translate(45 50) rotate(-45)">
+                <circle r="33" cx="0" cy="0"></circle>
+                <rect x="-8" y="32" width="16" height="30"></rect>
+            </g>
+
+            <g transform="translate(450 152)">
+                <polyline points="-15,-20 -35,-20 -35,40 25,40 25,20"></polyline>
+                <rect x="-15" y="-40" width="60" height="60"></rect>
+            </g>
+
+            <g transform="translate(50 352)">
+                <polygon points="-35,-5 0,-40 35,-5"></polygon>
+                <polygon points="-35,10 0,45 35,10"></polygon>
+            </g>
+
+            <g transform="translate(75 250)">
+                <polyline points="-30,30 -60,0 -30,-30"></polyline>
+                <polyline points="0,30 -30,0 0,-30"></polyline>
+            </g>
+
+            <g transform="translate(425 250) rotate(180)">
+                <polyline points="-30,30 -60,0 -30,-30"></polyline>
+                <polyline points="0,30 -30,0 0,-30"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
+</a>
+    Loading ITables v2.6.2 from the internet...
+    (need <a href="https://mwouts.github.io/itables/troubleshooting.html">help</a>?)</td>
+    </tr></tbody></table>
+<link href="https://www.unpkg.com/dt_for_itables@2.4.0/dt_bundle.css" rel="stylesheet">
+<script type="module">
+    import { ITable, jQuery as $ } from 'https://www.unpkg.com/dt_for_itables@2.4.0/dt_bundle.js';
+
+    document.querySelectorAll("#itables_fac12bdf_926f_4e13_b9b5_06f9e0874363:not(.dataTable)").forEach(table => {
+        if (!(table instanceof HTMLTableElement))
+            return;
+
+        let dt_args = {"layout": {"topStart": null, "topEnd": null, "bottomStart": null, "bottomEnd": null}, "text_in_header_can_be_selected": true, "order": [], "style": {"table-layout": "auto", "width": "auto", "margin": "auto", "caption-side": "bottom"}, "classes": ["display", "nowrap"], "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>name</th>\n      <th>authoring_format</th>\n      <th>runtime_language</th>\n      <th>is_open_source</th>\n      <th>can_self_host</th>\n      <th>url</th>\n    </tr>\n  </thead></table>", "data_json": "[[\"Arize Phoenix\", \"PY\", \"PY\", \"Y\", \"Y\", \"https://github.com/Arize-ai/phoenix\"], [\"Braintrust\", \"PY\", \"TS\", \"N\", \"N\", \"https://www.braintrust.dev\"], [\"DeepEval\", \"PY\", \"PY\", \"Y\", \"Y\", \"https://github.com/confident-ai/deepeval\"], [\"Giskard\", \"PY\", \"PY\", \"Y\", \"Y\", \"https://github.com/Giskard-AI/giskard\"], [\"Langfuse\", \"PY\", \"TS\", \"Y\", \"Y\", \"https://langfuse.com\"], [\"LangSmith\", \"PY\", \"TS\", \"N\", \"N\", \"https://www.langchain.com/langsmith\"], [\"Promptfoo\", \"YML\", \"TS\", \"Y\", \"Y\", \"https://promptfoo.dev\"], [\"Pydantic AI\", \"PY\", \"PY\", \"Y\", \"Y\", \"https://github.com/pydantic/pydantic-ai\"], [\"Ragas\", \"PY\", \"PY\", \"Y\", \"Y\", \"https://github.com/explodinggradients/ragas\"]]"};
+        new ITable(table, dt_args);
+    });
+</script>
+</div>
+</div>
+</div>
+</section>
+<section id="core-capabilities" class="level2">
+<h2 class="anchored" data-anchor-id="core-capabilities">Core capabilities</h2>
+<div class="comparison-table">
+<div id="d1dce318" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<!--| quarto-html-table-processing: none -->
+<table id="itables_e22b9e6b_c8a2_4af0_b4d9_da14e17af432"><tbody><tr>
+    <td style="vertical-align:middle; text-align:left">
+    <a href="https://mwouts.github.io/itables/"><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="64" viewbox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
+    <g style="fill:#d9d7fc">
+        <path d="M100,400H500V357H100Z"></path>
+        <path d="M100,300H400V257H100Z"></path>
+        <path d="M0,200H400V157H0Z"></path>
+        <path d="M100,100H500V57H100Z"></path>
+        <path d="M100,350H500V307H100Z"></path>
+        <path d="M100,250H400V207H100Z"></path>
+        <path d="M0,150H400V107H0Z"></path>
+        <path d="M100,50H500V7H100Z"></path>
+    </g>
+    <g style="fill:#1a1366;stroke:#1a1366;">
+   <rect x="100" y="7" width="400" height="43">
+    <animate attributename="width" values="0;400;0" dur="5s" repeatcount="indefinite"></animate>
+      <animate attributename="x" values="100;100;500" dur="5s" repeatcount="indefinite"></animate>
+  </rect>
+        <rect x="0" y="107" width="400" height="43">
+    <animate attributename="width" values="0;400;0" dur="3.5s" repeatcount="indefinite"></animate>
+    <animate attributename="x" values="0;0;400" dur="3.5s" repeatcount="indefinite"></animate>
+  </rect>
+        <rect x="100" y="207" width="300" height="43">
+    <animate attributename="width" values="0;300;0" dur="3s" repeatcount="indefinite"></animate>
+    <animate attributename="x" values="100;100;400" dur="3s" repeatcount="indefinite"></animate>
+  </rect>
+        <rect x="100" y="307" width="400" height="43">
+    <animate attributename="width" values="0;400;0" dur="4s" repeatcount="indefinite"></animate>
+      <animate attributename="x" values="100;100;500" dur="4s" repeatcount="indefinite"></animate>
+  </rect>
+        <g style="fill:transparent;stroke-width:8; stroke-linejoin:round" rx="5">
+            <g transform="translate(45 50) rotate(-45)">
+                <circle r="33" cx="0" cy="0"></circle>
+                <rect x="-8" y="32" width="16" height="30"></rect>
+            </g>
+
+            <g transform="translate(450 152)">
+                <polyline points="-15,-20 -35,-20 -35,40 25,40 25,20"></polyline>
+                <rect x="-15" y="-40" width="60" height="60"></rect>
+            </g>
+
+            <g transform="translate(50 352)">
+                <polygon points="-35,-5 0,-40 35,-5"></polygon>
+                <polygon points="-35,10 0,45 35,10"></polygon>
+            </g>
+
+            <g transform="translate(75 250)">
+                <polyline points="-30,30 -60,0 -30,-30"></polyline>
+                <polyline points="0,30 -30,0 0,-30"></polyline>
+            </g>
+
+            <g transform="translate(425 250) rotate(180)">
+                <polyline points="-30,30 -60,0 -30,-30"></polyline>
+                <polyline points="0,30 -30,0 0,-30"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
+</a>
+    Loading ITables v2.6.2 from the internet...
+    (need <a href="https://mwouts.github.io/itables/troubleshooting.html">help</a>?)</td>
+    </tr></tbody></table>
+<link href="https://www.unpkg.com/dt_for_itables@2.4.0/dt_bundle.css" rel="stylesheet">
+<script type="module">
+    import { ITable, jQuery as $ } from 'https://www.unpkg.com/dt_for_itables@2.4.0/dt_bundle.js';
+
+    document.querySelectorAll("#itables_e22b9e6b_c8a2_4af0_b4d9_da14e17af432:not(.dataTable)").forEach(table => {
+        if (!(table instanceof HTMLTableElement))
+            return;
+
+        let dt_args = {"layout": {"topStart": null, "topEnd": null, "bottomStart": null, "bottomEnd": null}, "text_in_header_can_be_selected": true, "order": [], "style": {"table-layout": "auto", "width": "auto", "margin": "auto", "caption-side": "bottom"}, "classes": ["display", "nowrap"], "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>name</th>\n      <th>deterministic_tests</th>\n      <th>caching</th>\n      <th>tool_call_validation</th>\n      <th>run_comparison</th>\n      <th>opentelemetry_tracing</th>\n      <th>chat_threads</th>\n      <th>red_teaming</th>\n      <th>model_comparison</th>\n      <th>web_ui</th>\n      <th>url</th>\n    </tr>\n  </thead></table>", "data_json": "[[\"Arize Phoenix\", \"Y\", \"N\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"https://github.com/Arize-ai/phoenix\"], [\"Braintrust\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"https://www.braintrust.dev\"], [\"DeepEval\", \"N\", \"n\", \"y\", \"y\", \"?\", \"?\", \"y\", \"y\", \"n\", \"https://github.com/confident-ai/deepeval\"], [\"Giskard\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"https://github.com/Giskard-AI/giskard\"], [\"Langfuse\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"https://langfuse.com\"], [\"LangSmith\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"https://www.langchain.com/langsmith\"], [\"Promptfoo\", \"Y\", \"Y\", \"P\", \"Y\", \"?\", \"p\", \"y\", \"y\", \"Y\", \"https://promptfoo.dev\"], [\"Pydantic AI\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"https://github.com/pydantic/pydantic-ai\"], [\"Ragas\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"https://github.com/explodinggradients/ragas\"]]"};
+        new ITable(table, dt_args);
+    });
+</script>
+</div>
+</div>
+</div>
+</section>
+<section id="everything-all-at-once" class="level2">
+<h2 class="anchored" data-anchor-id="everything-all-at-once">Everything all at once</h2>
+<p><em>Experimental - this will evolve into a full, filterable matrix.</em></p>
+<div class="comparison-table">
+<div id="5aa6fb49" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display">
+<!--| quarto-html-table-processing: none -->
+<table id="itables_70000298_6bf1_4fad_9e03_fc8f0bb5a01b"><tbody><tr>
+    <td style="vertical-align:middle; text-align:left">
+    <a href="https://mwouts.github.io/itables/"><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="64" viewbox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
+    <g style="fill:#d9d7fc">
+        <path d="M100,400H500V357H100Z"></path>
+        <path d="M100,300H400V257H100Z"></path>
+        <path d="M0,200H400V157H0Z"></path>
+        <path d="M100,100H500V57H100Z"></path>
+        <path d="M100,350H500V307H100Z"></path>
+        <path d="M100,250H400V207H100Z"></path>
+        <path d="M0,150H400V107H0Z"></path>
+        <path d="M100,50H500V7H100Z"></path>
+    </g>
+    <g style="fill:#1a1366;stroke:#1a1366;">
+   <rect x="100" y="7" width="400" height="43">
+    <animate attributename="width" values="0;400;0" dur="5s" repeatcount="indefinite"></animate>
+      <animate attributename="x" values="100;100;500" dur="5s" repeatcount="indefinite"></animate>
+  </rect>
+        <rect x="0" y="107" width="400" height="43">
+    <animate attributename="width" values="0;400;0" dur="3.5s" repeatcount="indefinite"></animate>
+    <animate attributename="x" values="0;0;400" dur="3.5s" repeatcount="indefinite"></animate>
+  </rect>
+        <rect x="100" y="207" width="300" height="43">
+    <animate attributename="width" values="0;300;0" dur="3s" repeatcount="indefinite"></animate>
+    <animate attributename="x" values="100;100;400" dur="3s" repeatcount="indefinite"></animate>
+  </rect>
+        <rect x="100" y="307" width="400" height="43">
+    <animate attributename="width" values="0;400;0" dur="4s" repeatcount="indefinite"></animate>
+      <animate attributename="x" values="100;100;500" dur="4s" repeatcount="indefinite"></animate>
+  </rect>
+        <g style="fill:transparent;stroke-width:8; stroke-linejoin:round" rx="5">
+            <g transform="translate(45 50) rotate(-45)">
+                <circle r="33" cx="0" cy="0"></circle>
+                <rect x="-8" y="32" width="16" height="30"></rect>
+            </g>
+
+            <g transform="translate(450 152)">
+                <polyline points="-15,-20 -35,-20 -35,40 25,40 25,20"></polyline>
+                <rect x="-15" y="-40" width="60" height="60"></rect>
+            </g>
+
+            <g transform="translate(50 352)">
+                <polygon points="-35,-5 0,-40 35,-5"></polygon>
+                <polygon points="-35,10 0,45 35,10"></polygon>
+            </g>
+
+            <g transform="translate(75 250)">
+                <polyline points="-30,30 -60,0 -30,-30"></polyline>
+                <polyline points="0,30 -30,0 0,-30"></polyline>
+            </g>
+
+            <g transform="translate(425 250) rotate(180)">
+                <polyline points="-30,30 -60,0 -30,-30"></polyline>
+                <polyline points="0,30 -30,0 0,-30"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
+</a>
+    Loading ITables v2.6.2 from the internet...
+    (need <a href="https://mwouts.github.io/itables/troubleshooting.html">help</a>?)</td>
+    </tr></tbody></table>
+<link href="https://www.unpkg.com/dt_for_itables@2.4.0/dt_bundle.css" rel="stylesheet">
+<script type="module">
+    import { ITable, jQuery as $ } from 'https://www.unpkg.com/dt_for_itables@2.4.0/dt_bundle.js';
+
+    document.querySelectorAll("#itables_70000298_6bf1_4fad_9e03_fc8f0bb5a01b:not(.dataTable)").forEach(table => {
+        if (!(table instanceof HTMLTableElement))
+            return;
+
+        let dt_args = {"layout": {"topStart": null, "topEnd": null, "bottomStart": null, "bottomEnd": null}, "text_in_header_can_be_selected": true, "order": [], "style": {"table-layout": "auto", "width": "auto", "margin": "auto", "caption-side": "bottom"}, "classes": ["display", "nowrap"], "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>name</th>\n      <th>authoring_format</th>\n      <th>runtime_language</th>\n      <th>is_open_source</th>\n      <th>can_self_host</th>\n      <th>deterministic_tests</th>\n      <th>caching</th>\n      <th>tool_call_validation</th>\n      <th>run_comparison</th>\n      <th>opentelemetry_tracing</th>\n      <th>chat_threads</th>\n      <th>red_teaming</th>\n      <th>model_comparison</th>\n      <th>web_ui</th>\n      <th>url</th>\n    </tr>\n  </thead></table>", "data_json": "[[\"Arize Phoenix\", \"PY\", \"PY\", \"Y\", \"Y\", \"Y\", \"N\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"https://github.com/Arize-ai/phoenix\"], [\"Braintrust\", \"PY\", \"TS\", \"N\", \"N\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"https://www.braintrust.dev\"], [\"DeepEval\", \"PY\", \"PY\", \"Y\", \"Y\", \"N\", \"n\", \"y\", \"y\", \"?\", \"?\", \"y\", \"y\", \"n\", \"https://github.com/confident-ai/deepeval\"], [\"Giskard\", \"PY\", \"PY\", \"Y\", \"Y\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"https://github.com/Giskard-AI/giskard\"], [\"Langfuse\", \"PY\", \"TS\", \"Y\", \"Y\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"https://langfuse.com\"], [\"LangSmith\", \"PY\", \"TS\", \"N\", \"N\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"https://www.langchain.com/langsmith\"], [\"Promptfoo\", \"YML\", \"TS\", \"Y\", \"Y\", \"Y\", \"Y\", \"P\", \"Y\", \"?\", \"p\", \"y\", \"y\", \"Y\", \"https://promptfoo.dev\"], [\"Pydantic AI\", \"PY\", \"PY\", \"Y\", \"Y\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"https://github.com/pydantic/pydantic-ai\"], [\"Ragas\", \"PY\", \"PY\", \"Y\", \"Y\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"?\", \"https://github.com/explodinggradients/ragas\"]]"};
+        new ITable(table, dt_args);
+    });
+</script>
+</div>
+</div>
+</div>
+</section>
+<section id="labels" class="level2">
+<h2 class="anchored" data-anchor-id="labels">Labels</h2>
+<div class="eval-legend">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="eval-chip yes proven">Y</span></td>
+<td>Yes - I tested it and it works</td>
+</tr>
+<tr class="even">
+<td><span class="eval-chip yes doc">y</span></td>
+<td>Yes - docs say so, I haven’t verified</td>
+</tr>
+<tr class="odd">
+<td><span class="eval-chip no proven">N</span></td>
+<td>No - I tested it, not supported<sup>(*)</sup></td>
+</tr>
+<tr class="even">
+<td><span class="eval-chip no doc">n</span></td>
+<td>No - docs say so, I haven’t verified<sup>(*)</sup></td>
+</tr>
+<tr class="odd">
+<td><span class="eval-chip partial">P</span></td>
+<td>Partial - I tested it, limited support</td>
+</tr>
+<tr class="even">
+<td><span class="eval-chip partial doc">p</span></td>
+<td>Partial - docs say so, I haven’t verified</td>
+</tr>
+<tr class="odd">
+<td><span class="eval-chip unknown">?</span></td>
+<td>Unknown - no information</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><sup>(*)</sup> “Not supported” may mean it’s not a built-in feature. In some cases you could build it yourself - the distinction is whether the tool does it for you out of the box.</li>
+</ul>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>I might experiment with a <a href="../tools/compare-observable.html">layout using ObservableJS</a></p>
+</div>
+</div>
+</section>
+<section id="api" class="level2">
+<h2 class="anchored" data-anchor-id="api">API</h2>
+<p>All comparison data is available as JSON for programmatic access.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Endpoint</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="../api/tools.json"><code>/api/tools.json</code></a></td>
+<td>All tools</td>
+</tr>
+<tr class="even">
+<td><a href="../api/tools/promptfoo.json"><code>/api/tools/{id}.json</code></a></td>
+<td>Individual tool (e.g., <code>promptfoo</code>)</td>
+</tr>
+<tr class="odd">
+<td><a href="../api/schema.json"><code>/api/schema.json</code></a></td>
+<td>JSON Schema for validation</td>
+</tr>
+</tbody>
+</table>
+<section id="example-usage" class="level3">
+<h3 class="anchored" data-anchor-id="example-usage">Example Usage</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Fetch all tools in python</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>tools <span class="op">=</span> requests.get(<span class="st">"https://ai-evals.io/api/tools.json"</span>).json()</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> tool <span class="kw">in</span> tools[<span class="st">"tools"</span>]:</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>tool[<span class="st">'name'</span>]<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>tool[<span class="st">'url'</span>]<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Fetch individual tool in javascript</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> promptfoo <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(<span class="st">"https://ai-evals.io/api/tools/promptfoo.json"</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">then</span>(r <span class="kw">=&gt;</span> r<span class="op">.</span><span class="fu">json</span>())<span class="op">;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(promptfoo<span class="op">.</span><span class="at">features</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The schema follows the <a href="https://json-schema.org/">JSON Schema</a> specification, making it compatible with code generators, validators, and LLM tooling.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
