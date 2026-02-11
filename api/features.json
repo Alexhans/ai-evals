@@ -1,0 +1,50 @@
+{
+  "version": "1.0",
+  "features": {
+    "deterministic_tests": {
+      "label": "Deterministic tests",
+      "description": "Y/y: rich built-in deterministic checks (mostly configuration). P/p: some facilities, but real coverage needs custom test constructs. N/n: no meaningful built-in deterministic checks, effectively only LLM-as-a-judge style evaluation.",
+      "why_it_matters": "Reduces flakiness and makes regressions easier to catch in CI."
+    },
+    "caching": {
+      "label": "Caching",
+      "description": "Y/y: built-in caching is automatic or simple to enable. P/p: possible, but you are effectively building a construct on top. N/n: no practical built-in caching path.",
+      "why_it_matters": "Lowers cost and iteration time during prompt and test development."
+    },
+    "tool_call_validation": {
+      "label": "Tool call validation",
+      "description": "Y/y: built-in validation of tool/function calls with automatic pass/fail checks. P/p: partial support, but key validation logic is custom or path-limited. N/n: no built-in validation workflow; logs/OTel alone do not count.",
+      "why_it_matters": "Prevents silent failures in agent workflows that rely on tool use."
+    },
+    "run_comparison": {
+      "label": "Run comparison",
+      "description": "Y/y: built-in run-to-run comparison over time. P/p: some comparison exists but is limited or manual. N/n: no native run comparison; requires custom scripts.",
+      "why_it_matters": "Helps isolate regressions and quantify improvements over time."
+    },
+    "opentelemetry_tracing": {
+      "label": "OpenTelemetry tracing",
+      "description": "Y/y: built-in OTel tracing can be enabled/configured directly. P/p: OTel is possible but needs meaningful custom plumbing or only works in narrow paths. N/n: no practical built-in OTel tracing path.",
+      "why_it_matters": "Enables cross-system debugging and shared telemetry standards."
+    },
+    "chat_threads": {
+      "label": "Chat threads",
+      "description": "Y/y: built-in multi-turn thread/session testing. P/p: thread support exists but is constrained or indirect. N/n: effectively single-turn unless you build orchestration.",
+      "why_it_matters": "Better reflects production chatbot and assistant behavior."
+    },
+    "red_teaming": {
+      "label": "Red teaming",
+      "description": "Y/y: first-class built-in red-team/adversarial workflows. P/p: some attack/safety checks exist but workflow coverage is incomplete. N/n: no native red-team flow; custom harness required.",
+      "why_it_matters": "Surfaces failure modes and policy violations before deployment."
+    },
+    "model_comparison": {
+      "label": "Model comparison",
+      "description": "Y/y: built-in side-by-side or scored comparison across models/providers/runs. P/p: comparison exists but only in limited paths. N/n: requires user-built scripts/pipelines.",
+      "why_it_matters": "Supports model selection and migration decisions with evidence."
+    },
+    "web_ui": {
+      "label": "Web UI",
+      "description": "Y/y: built-in UI shows current results, past/history, and comparison. P/p: built-in UI exists but misses at least one of those three. N/n: no built-in UI for eval results.",
+      "why_it_matters": "Makes debugging and collaboration easier for mixed technical teams."
+    }
+  }
+}

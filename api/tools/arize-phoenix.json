@@ -31,7 +31,7 @@
       "explanation": null
     },
     "tool_call_validation": {
-      "status": "unknown",
+      "status": "docs",
       "value": null,
       "explanation": null
     },

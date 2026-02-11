@@ -4,7 +4,7 @@
     "href": "tools/compare.html",
     "title": "Compare Tools",
     "section": "",
-    "text": "Note\n\n\n\nThis comparison is a work in progress. I’m figuring out the best way to present this information for different audiences - some details may be too much, some too nuanced. A crude baseline is still useful: it helps start to understand and categorize a relatively new space. caniuse.com also started somewhere. Feedback extremely welcome - get in touch."
+    "text": "Note\n\n\n\nThis comparison is a work in progress. I’m figuring out the best way to present this information for different audiences - some details may be too much, some too nuanced. A crude baseline is still useful: it helps start to understand and categorize a relatively new space. caniuse.com also started somewhere.\nCode repo: Eval-Ception on GitHub.\nFeedback welcome: Reach out directly (Linktree) or join Eval-Ception Discussions."
   },
   {
     "objectID": "tools/compare.html#context",
@@ -32,49 +32,84 @@
     "href": "tools/compare.html#labels",
     "title": "Compare Tools",
     "section": "Labels",
-    "text": "Labels\n\n\n\n\n\n\n\n\nSymbol\nMeaning\n\n\n\n\nY\nYes - I tested it and it works\n\n\ny\nYes - docs say so, I haven’t verified\n\n\nN\nNo - I tested it, not supported(*)\n\n\nn\nNo - docs say so, I haven’t verified(*)\n\n\nP\nPartial - I tested it, limited support\n\n\np\nPartial - docs say so, I haven’t verified\n\n\n?\nUnknown - no information\n\n\n\n\n(*) “Not supported” may mean it’s not a built-in feature. In some cases you could build it yourself - the distinction is whether the tool does it for you out of the box.\n\n\n\n\n\n\n\n\nNote\n\n\n\nI might experiment with a layout using ObservableJS"
+    "text": "Labels\n\n\n\n\n\n\n\n\nSymbol\nMeaning\n\n\n\n\nY\nYes - I tested it and it works\n\n\ny\nYes - docs say so, I haven’t verified\n\n\nN\nNo - I tested it, not supported(*)\n\n\nn\nNo - docs say so, I haven’t verified(*)\n\n\nP\nPartial - I tested it, limited support\n\n\np\nPartial - docs say so, I haven’t verified\n\n\n?\nUnknown - no information\n\n\n\n\n(*) In this table, support means built-in or out-of-the-box. If it requires custom code/integration by the user, it is not counted as supported.\n\n\n\n\n\n\n\n\nNote\n\n\n\nI might experiment with a layout using ObservableJS"
   },
   {
     "objectID": "tools/compare.html#api",
     "href": "tools/compare.html#api",
     "title": "Compare Tools",
     "section": "API",
-    "text": "API\nAll comparison data is available as JSON for programmatic access.\n\n\n\nEndpoint\nDescription\n\n\n\n\n/api/tools.json\nAll tools\n\n\n/api/tools/{id}.json\nIndividual tool (e.g., promptfoo)\n\n\n/api/schema.json\nJSON Schema for validation\n\n\n\n\nExample Usage\nimport requests\n\n# Fetch all tools in python\ntools = requests.get(\"https://ai-evals.io/api/tools.json\").json()\n\nfor tool in tools[\"tools\"]:\n    print(f\"{tool['name']}: {tool['url']}\")\n// Fetch individual tool in javascript\nconst promptfoo = await fetch(\"https://ai-evals.io/api/tools/promptfoo.json\")\n  .then(r =&gt; r.json());\n\nconsole.log(promptfoo.features);\nThe schema follows the JSON Schema specification, making it compatible with code generators, validators, and LLM tooling."
+    "text": "API\nAll comparison data is available as JSON for programmatic access.\n\n\n\nEndpoint\nDescription\n\n\n\n\n/api/tools.json\nAll tools\n\n\n/api/tools/{id}.json\nIndividual tool (e.g., promptfoo)\n\n\n/api/features.json\nBuilt-in feature definitions and explanations\n\n\n/api/schema.json\nJSON Schema for validation\n\n\n\n\nExample Usage\nimport requests\n\n# Fetch all tools in python\ntools = requests.get(\"https://ai-evals.io/api/tools.json\").json()\n\nfor tool in tools[\"tools\"]:\n    print(f\"{tool['name']}: {tool['url']}\")\n// Fetch individual tool in javascript\nconst promptfoo = await fetch(\"https://ai-evals.io/api/tools/promptfoo.json\")\n  .then(r =&gt; r.json());\n\nconsole.log(promptfoo.features);\nThe schema follows the JSON Schema specification, making it compatible with code generators, validators, and LLM tooling."
   },
   {
-    "objectID": "resources/index.html",
-    "href": "resources/index.html",
-    "title": "Evals Resources",
+    "objectID": "privacy/index.html",
+    "href": "privacy/index.html",
+    "title": "Privacy",
+    "section": "",
+    "text": "This site is intentionally minimal."
+  },
+  {
+    "objectID": "privacy/index.html#what-we-do-not-track",
+    "href": "privacy/index.html#what-we-do-not-track",
+    "title": "Privacy",
+    "section": "What we do not track",
+    "text": "What we do not track\n\nNo third‑party analytics trackers.\nNo behavioral profiling or ad retargeting."
+  },
+  {
+    "objectID": "privacy/index.html#what-we-do-use",
+    "href": "privacy/index.html#what-we-do-use",
+    "title": "Privacy",
+    "section": "What we do use",
+    "text": "What we do use\n\nQuarto and its standard JS/CSS assets to render the site.\nA newsletter signup form (Buttondown) when enabled. Buttondown stores your email so you can receive updates and unsubscribe any time."
+  },
+  {
+    "objectID": "privacy/index.html#external-links",
+    "href": "privacy/index.html#external-links",
+    "title": "Privacy",
+    "section": "External links",
+    "text": "External links\n\nSome links go to third‑party sites (GitHub, Medium, LinkedIn, etc.). Their privacy policies apply once you leave this site."
+  },
+  {
+    "objectID": "privacy/index.html#contact",
+    "href": "privacy/index.html#contact",
+    "title": "Privacy",
+    "section": "Contact",
+    "text": "Contact\nIf you have privacy questions, open a GitHub issue or contact us via the newsletter reply link."
+  },
+  {
+    "objectID": "methodology-long.html",
+    "href": "methodology-long.html",
+    "title": "AI-Evals.io",
+    "section": "",
+    "text": "This site prioritizes practical, reproducible evals over marketing claims."
+  },
+  {
+    "objectID": "links/index.html",
+    "href": "links/index.html",
+    "title": "Links",
     "section": "",
     "text": "Aparna Dhinakaran - Medium · The AI Engineer (Newsletter) - Co-founder and CPO (Chief Product Officer) of Arize AI; writes about evals and tooling. Formerly Cornell CV PhD, Uber ML, UC Berkeley AI Research. (updated 2026-02-01)\nIan W. (Promptfoo creator) - Blog - Posts by the creator of Promptfoo, often about evals and tooling. (updated 2026-02-01)\nEugene Yan - Blog - Practical ML/AI writing with useful evaluation and production insights. (updated 2026-02-01)\nHamel Husain - Blog - Machine learning engineer with 20+ years experience; independent consultant helping companies build AI products. Formerly at Airbnb and GitHub; open-source contributor. (updated 2026-02-01)\n\n\n\n\n\nVivek Menon - Awesome AI Eval (GitHub) - Curated list of AI evaluation tools, papers, and resources. (updated 2026-02-01)\n\n\n\n\n\nHacker News - Search: evals - Live HN search results for evals discussions. (updated 2026-02-01)\nReddit - r/LocalLLaMA - Local-first AI community with lots of eval, tooling, and control discussions. (updated 2026-02-01)"
   },
   {
-    "objectID": "resources/index.html#blogs",
-    "href": "resources/index.html#blogs",
-    "title": "Evals Resources",
+    "objectID": "links/index.html#blogs",
+    "href": "links/index.html#blogs",
+    "title": "Links",
     "section": "",
     "text": "Aparna Dhinakaran - Medium · The AI Engineer (Newsletter) - Co-founder and CPO (Chief Product Officer) of Arize AI; writes about evals and tooling. Formerly Cornell CV PhD, Uber ML, UC Berkeley AI Research. (updated 2026-02-01)\nIan W. (Promptfoo creator) - Blog - Posts by the creator of Promptfoo, often about evals and tooling. (updated 2026-02-01)\nEugene Yan - Blog - Practical ML/AI writing with useful evaluation and production insights. (updated 2026-02-01)\nHamel Husain - Blog - Machine learning engineer with 20+ years experience; independent consultant helping companies build AI products. Formerly at Airbnb and GitHub; open-source contributor. (updated 2026-02-01)"
   },
   {
-    "objectID": "resources/index.html#resources",
-    "href": "resources/index.html#resources",
-    "title": "Evals Resources",
+    "objectID": "links/index.html#links",
+    "href": "links/index.html#links",
+    "title": "Links",
     "section": "",
     "text": "Vivek Menon - Awesome AI Eval (GitHub) - Curated list of AI evaluation tools, papers, and resources. (updated 2026-02-01)"
   },
   {
-    "objectID": "resources/index.html#communities",
-    "href": "resources/index.html#communities",
-    "title": "Evals Resources",
+    "objectID": "links/index.html#communities",
+    "href": "links/index.html#communities",
+    "title": "Links",
     "section": "",
     "text": "Hacker News - Search: evals - Live HN search results for evals discussions. (updated 2026-02-01)\nReddit - r/LocalLLaMA - Local-first AI community with lots of eval, tooling, and control discussions. (updated 2026-02-01)"
-  },
-  {
-    "objectID": "methodology-legend.html",
-    "href": "methodology-legend.html",
-    "title": "AI-Evals.io",
-    "section": "",
-    "text": "Symbol\nMeaning\n\n\n\n\nY\nYes - I tested it and it works\n\n\ny\nYes - docs say so, I haven’t verified\n\n\nN\nNo - I tested it, not supported(*)\n\n\nn\nNo - docs say so, I haven’t verified(*)\n\n\nP\nPartial - I tested it, limited support\n\n\np\nPartial - docs say so, I haven’t verified\n\n\n?\nUnknown - no information\n\n\n\n\n(*) “Not supported” may mean it’s not a built-in feature. In some cases you could build it yourself - the distinction is whether the tool does it for you out of the box."
   },
   {
     "objectID": "cookbook/index.html",
@@ -95,7 +130,7 @@
     "href": "cookbook/index.html#have-a-cookbook-to-share",
     "title": "Cookbook",
     "section": "Have a cookbook to share?",
-    "text": "Have a cookbook to share?\nI welcome external contributions:\n\nThey should be runnable in a few commands and simple parameters, not just principles.\nIt should be small enough code as to be auditable and take the user to eval results within 10 minutes (sans LLMs running time).\nSecurity expectations might evolve over time as we find the right balance between easy and secure defaults. I don’t want to create bad habits or unnecessary attack vectors while also recognizing that people will just use much of what they find.\nGet in touch and let’s work it out together."
+    "text": "Have a cookbook to share?\nI welcome external contributions:\n\nThey should be runnable in a few commands and simple parameters, not just principles.\nIt should be small enough code as to be auditable and take the user to eval results within 10 minutes (sans LLMs running time).\nSecurity expectations might evolve over time as we find the right balance between easy and secure defaults. I don’t want to create bad habits or unnecessary attack vectors while also recognizing that people will just use much of what they find.\n\nFeedback welcome: Reach out directly (Linktree) or join Eval-Ception Discussions."
   },
   {
     "objectID": "community/index.html",
@@ -130,7 +165,7 @@
     "href": "about/index.html#who-this-is-for-and-why",
     "title": "About",
     "section": "Who This Is For And Why",
-    "text": "Who This Is For And Why\nWhen I say “builders” I mean anyone creating workflows with LLMs. Individual experimentation might be easier than ever but sharing, maintaining and improving workflows - especially when collaborating with others - can quickly become labor intensive.\nThis site provides practical starting points and evaluation patterns that help with cost, time, and collaboration once workflows grow beyond a single person.\n\n\nMethodology\n\nThis site prioritizes practical, reproducible evals over marketing claims.\n\n\n\n\n\n\n\n\nSymbol\nMeaning\n\n\n\n\nY\nYes - I tested it and it works\n\n\ny\nYes - docs say so, I haven’t verified\n\n\nN\nNo - I tested it, not supported(*)\n\n\nn\nNo - docs say so, I haven’t verified(*)\n\n\nP\nPartial - I tested it, limited support\n\n\np\nPartial - docs say so, I haven’t verified\n\n\n?\nUnknown - no information\n\n\n\n\n(*) “Not supported” may mean it’s not a built-in feature. In some cases you could build it yourself - the distinction is whether the tool does it for you out of the box.\n\n\n\n\n\nWhy I built this\n\nI’ve spent my career building products and helping cross-functional teams collaborate at the right level of complexity. One thing I’ve learned is that automation really pays off when it’s easy to change (ETC) - otherwise you can’t iterate fast or explore alternatives.\nThe principles that guide my thinking around testability and simplicity come from being accountable for live systems over many years. You learn how small decisions compound, how fear sets in when it’s hard to prove things quickly, how feedback loops make speed possible without losing context, and how difficult it is to roll back complexity once it takes hold. When working with others, I’ve found that progress depends on sharing those mental models - but also on having simple ways to practice them through real examples. My goal here is to smooth that path as much as possible, so people can automate the churny parts of their work and move on, instead of automating and hoping for the best - or quietly handing off the hard parts and losing control of the end-to-end system.\nWith LLMs, that comes down to evaluation (or “evals,” as it’s commonly called).\nYou trust what you can test. Evaluation is how automation stays reliable. But today, eval tools are hard to compare, hard to get started with, and often require commitment before you can even experiment. I built this site to make it easier to try things quickly, understand the tradeoffs, and keep control: comparison data and time-boxed starting points instead of premature decisions.\nEvals also shouldn’t belong to a single role. Anyone working with LLM workflows shapes the outcome. We need shared mental models for what “good enough” means, without outsourcing responsibility or accountability. Evaluation thinking should start on day one.\nAnd finally, good evaluation goes beyond correctness. Responsible automation includes operational and ethical constraints: rate limiting, bias checks, safety validation. This site treats those as first-class concerns, alongside practical implementation guidance.\n\n\n\nPrinciples of comparisons\n\n\nQuality over assumptions: I’d rather have “unknown” than overstate.\nPractitioner-focused: I compare based on real production needs, not theoretical features.\nTool-agnostic: Tools come and go. This may even help many improve at the same time.\nEvaluation-first: Test before you ship. Measure what matters.\nLiving resource: The comparison evolves as I test more tools and features.\n\n\n\n\nPlatform choices\n\n\nQuarto: Separates data from presentation, making updates easy and transparent\nButtondown: Privacy-respecting newsletter platform with easy unsubscribe and data export\nJSON API: All comparison data accessible programmatically for tools and LLM agents\nOpen source: Full source code will be available on GitHub for transparency and contributions soon.\n\nMore on privacy\n\n\n\nWhat’s next\n\nShort term:\n\nExpand tool coverage with hands-on testing\n\nRefine data models and how to communicate nuance without losing the value of the discrete answers\n\nEvaluation patterns for Apache Airflow + GenAI workflows (related talk)\nAdd interactive decision trees to help users make decisions, such as which tool to try out\nCreate practical cookbooks for common evaluation patterns\nPush security defaults with one-liners so it feels there’s no tradeoff. If something is hard, people won’t default to it.\n\nLong term:\n\nBuild evaluation-first thinking into how people approach LLM automation\nGrow a community around responsible, effective evaluation practices\nMake testing as natural as prompting for anyone working with LLMs\n\n\n\nHave feedback? Reach out or join the newsletter."
+    "text": "Who This Is For And Why\nWhen I say “builders” I mean anyone creating workflows with LLMs. Individual experimentation might be easier than ever but sharing, maintaining and improving workflows - especially when collaborating with others - can quickly become labor intensive.\nThis site provides practical starting points and evaluation patterns that help with cost, time, and collaboration once workflows grow beyond a single person.\n\n\nMethodology\n\nThis site prioritizes practical, reproducible evals over marketing claims.\n\n\n\n\n\n\n\n\nSymbol\nMeaning\n\n\n\n\nY\nYes - I tested it and it works\n\n\ny\nYes - docs say so, I haven’t verified\n\n\nN\nNo - I tested it, not supported(*)\n\n\nn\nNo - docs say so, I haven’t verified(*)\n\n\nP\nPartial - I tested it, limited support\n\n\np\nPartial - docs say so, I haven’t verified\n\n\n?\nUnknown - no information\n\n\n\n\n(*) In this table, support means built-in or out-of-the-box. If it requires custom code/integration by the user, it is not counted as supported.\n\n\n\n\n\nWhy I built this\n\nI’ve spent my career building products and helping cross-functional teams collaborate at the right level of complexity. One thing I’ve learned is that automation really pays off when it’s easy to change (ETC) - otherwise you can’t iterate fast or explore alternatives.\nThe principles that guide my thinking around testability and simplicity come from being accountable for live systems over many years. You learn how small decisions compound, how fear sets in when it’s hard to prove things quickly, how feedback loops make speed possible without losing context, and how difficult it is to roll back complexity once it takes hold. When working with others, I’ve found that progress depends on sharing those mental models - but also on having simple ways to practice them through real examples. My goal here is to smooth that path as much as possible, so people can automate the churny parts of their work and move on, instead of automating and hoping for the best - or quietly handing off the hard parts and losing control of the end-to-end system.\nWith LLMs, that comes down to evaluation (or “evals,” as it’s commonly called).\nYou trust what you can test. Evaluation is how automation stays reliable. But today, eval tools are hard to compare, hard to get started with, and often require commitment before you can even experiment. I built this site to make it easier to try things quickly, understand the tradeoffs, and keep control: comparison data and time-boxed starting points instead of premature decisions.\nEvals also shouldn’t belong to a single role. Anyone working with LLM workflows shapes the outcome. We need shared mental models for what “good enough” means, without outsourcing responsibility or accountability. Evaluation thinking should start on day one.\nAnd finally, good evaluation goes beyond correctness. Responsible automation includes operational and ethical constraints: rate limiting, bias checks, safety validation. This site treats those as first-class concerns, alongside practical implementation guidance.\n\n\n\nPrinciples of comparisons\n\n\nQuality over assumptions: I’d rather have “unknown” than overstate.\nPractitioner-focused: I compare based on real production needs, not theoretical features.\nTool-agnostic: Tools come and go. This may even help many improve at the same time.\nEvaluation-first: Test before you ship. Measure what matters.\nLiving resource: The comparison evolves as I test more tools and features.\n\n\n\n\nPlatform choices\n\n\nQuarto: Separates data from presentation, making updates easy and transparent\nButtondown: Privacy-respecting newsletter platform with easy unsubscribe and data export\nJSON API: All comparison data accessible programmatically for tools and LLM agents\nOpen source: Full source code will be available on GitHub for transparency and contributions soon.\n\nMore on privacy\n\n\n\nWhat’s next\n\nShort term:\n\nExpand tool coverage with hands-on testing\n\nRefine data models and how to communicate nuance without losing the value of the discrete answers\n\nEvaluation patterns for Apache Airflow + GenAI workflows (related talk)\nAdd interactive decision trees to help users make decisions, such as which tool to try out\nCreate practical cookbooks for common evaluation patterns\nPush security defaults with one-liners so it feels there’s no tradeoff. If something is hard, people won’t default to it.\n\nLong term:\n\nBuild evaluation-first thinking into how people approach LLM automation\nGrow a community around responsible, effective evaluation practices\nMake testing as natural as prompting for anyone working with LLMs\n\n\n\nFeedback welcome: Reach out directly (Linktree) or join Eval-Ception Discussions."
   },
   {
     "objectID": "community/001-launch.html",
@@ -172,7 +207,7 @@
     "href": "cookbook/eval-ception.html#choose-your-agent",
     "title": "Eval-Ception: Testing an Agent That Speaks for You",
     "section": "Choose Your Agent",
-    "text": "Choose Your Agent\nThe exam is the same regardless of which agent you use. Pick the one that matches how you work.\n\n\n\n\n\n\nNote\n\n\n\nI use pip in the examples below. I prefer hatch with uv and the repo supports those too.\n\n\n\nCLI Agent (Claude, Codex)Local Model (Ollama)Custom Agent\n\n\nYou already use a CLI coding agent like Claude Code, Codex, or OpenCode. You’ll point the eval at your CLI and it will ask the questions directly.\nBest for: people who already have a CLI agent installed and want to test it as-is.\nPrerequisites:\n\nClaude Code, Codex, or OpenCode installed\nNode.js (for Promptfoo)\nPython 3.10+\n\ngit clone https://github.com/Alexhans/eval-ception\ncd eval-ception\npip install -r promptfoo/requirements.txt\n\n\nYou want to run everything locally. The agent uses Playwright to crawl the site and a local model to reason about the content. No API keys, no cloud calls.\nBest for: people who care about local models, privacy, or want to experiment without cost.\nPrerequisites:\n\nOllama or llama.cpp installed and running\nNode.js (for Promptfoo)\nPython 3.10+\n\nollama pull qwen3:8b        # the agent\nollama pull deepseek-r1:14b  # the judge (for LLM-as-judge tests)\n\ngit clone https://github.com/Alexhans/eval-ception\ncd eval-ception\n\ncd agent\npip install -r requirements.txt\nplaywright install --with-deps\ncd ..\n\n\nYou build your own agents or already have a service running. You’ll write a small provider that Promptfoo calls with each question - it could call your local code, or hit an HTTP endpoint you already have deployed.\nBest for: developers building agents, or teams who already have a chatbot/assistant endpoint they want to test.\nPrerequisites:\n\nNode.js (for Promptfoo)\nPython 3.10+\nYour agent code\n\ngit clone https://github.com/Alexhans/eval-ception\ncd eval-ception\nSee promptfoo/provider.py for the interface your provider needs to implement - it’s a single call_api(prompt, options, context) function that returns {\"output\": \"your answer\"}."
+    "text": "Choose Your Agent\nThe exam is the same regardless of which agent you use. Pick the one that matches how you work.\n\n\n\n\n\n\nNote\n\n\n\nI use pip in the examples below. I prefer hatch with uv and the repo supports those too.\n\n\n\nCLI Agent (Claude, Codex)Local Model (Ollama)Custom Agent\n\n\nYou already use a CLI coding agent like Claude Code, Codex, or OpenCode. You’ll point the eval at your CLI and it will ask the questions directly.\nBest for: people who already have a CLI agent installed and want to test it as-is.\nPrerequisites:\n\nClaude Code, Codex, or OpenCode installed\nNode.js (for Promptfoo)\nPython 3.10+\n\ngit clone https://github.com/Alexhans/eval-ception\ncd eval-ception\npip install -e .\n\n\nYou want to run everything locally. The agent uses Playwright to crawl the site and a local model to reason about the content. No API keys, no cloud calls.\nBest for: people who care about local models, privacy, or want to experiment without cost.\nPrerequisites:\n\nOllama or llama.cpp installed and running\nNode.js (for Promptfoo)\nPython 3.10+\n\nollama pull qwen3:8b        # the agent\nollama pull deepseek-r1:14b  # the judge (for LLM-as-judge tests)\n\ngit clone https://github.com/Alexhans/eval-ception\ncd eval-ception\n\npip install -e .\n\n\nYou build your own agents or already have a service running. You’ll write a small provider that Promptfoo calls with each question - it could call your local code, or hit an HTTP endpoint you already have deployed.\nBest for: developers building agents, or teams who already have a chatbot/assistant endpoint they want to test.\nPrerequisites:\n\nNode.js (for Promptfoo)\nPython 3.10+\nYour agent code\n\ngit clone https://github.com/Alexhans/eval-ception\ncd eval-ception\nSee promptfoo/ollama_provider.py for the interface your provider needs to implement - it’s a single call_api(prompt, options, context) function that returns {\"output\": \"your answer\"}."
   },
   {
     "objectID": "cookbook/eval-ception.html#the-exam-promptfooconfig.yaml",
@@ -186,76 +221,41 @@
     "href": "cookbook/eval-ception.html#run-it",
     "title": "Eval-Ception: Testing an Agent That Speaks for You",
     "section": "Run It",
-    "text": "Run It\ncd promptfoo\nnpx promptfoo eval\nPromptfoo runs each question through the agent, collects the answers, and checks the assertions. When it’s done:\nnpx promptfoo view\nThis opens a local dashboard where you can see every question, the agent’s answer, and whether it passed or failed."
+    "text": "Run It\nbaseline-agent --log-level DEBUG \"Who created the website ai-evals.io?\"\n\ncd promptfoo\nnpx promptfoo eval -c promptfooconfig.yaml --filter-providers \"^ollama_agent$\" -n 1 --verbose\nnpx promptfoo view\n\n# full exam\nnpx promptfoo eval -c promptfooconfig.yaml --filter-providers \"^ollama_agent$\" --verbose\nPromptfoo runs each question through the agent, collects the answers, and checks the assertions. promptfoo view opens a local dashboard where you can inspect every question, answer, and assertion result."
   },
   {
     "objectID": "cookbook/eval-ception.html#what-youll-see",
     "href": "cookbook/eval-ception.html#what-youll-see",
     "title": "Eval-Ception: Testing an Agent That Speaks for You",
     "section": "What You’ll See",
-    "text": "What You’ll See\nIn our runs, the agent scored 4/6 (66.7%) on its first try. That’s a failing grade - and that’s useful information.\nYou’ll probably look at some of the tests and think “that assertion is wrong” or “I’d ask the question differently” or “this should check for structured output, not just keywords”. Good. That instinct is the whole point. You’re already thinking about what “correct” means for this domain - and that’s exactly what building evals teaches you.\nHow would you improve the exam? Change a test case, run it again, and see what happens."
+    "text": "What You’ll See\nIn our runs, the agent scored 6/7 (85.7%) on one baseline run. A failing test is still useful information - that’s the point.\nYou’ll probably look at some of the tests and think “that assertion is wrong” or “I’d ask the question differently” or “this should check for structured output, not just keywords”. Good. That instinct is the whole point. You’re already thinking about what “correct” means for this domain - and that’s exactly what building evals teaches you.\nHow would you improve the exam? Change a test case, run it again, and see what happens."
   },
   {
     "objectID": "cookbook/eval-ception.html#why-this-gives-you-control",
     "href": "cookbook/eval-ception.html#why-this-gives-you-control",
     "title": "Eval-Ception: Testing an Agent That Speaks for You",
     "section": "Why This Gives You Control",
-    "text": "Why This Gives You Control\nQuality. You just scored 4/6. Now swap qwen3:8b for llama3:8b and run it again. Did the score go up? You just compared two models in 5 minutes, no manual review.\nRegressions. Your LLM provider quietly updates their model next Tuesday. You wouldn’t know - but your eval would. Run it on a schedule and the regression shows up before your users notice.\nLearning from mistakes. A customer reports your agent got something wrong? Add the question and the correct answer as a new test case. That mistake becomes a regression test - it can’t silently happen again.\nCost. Each run can tell you how many tokens it consumed. Multiply by your rate and you know what running at scale will cost before you commit.\nPrivacy. You ran the local model path? Everything stayed on your machine. The eval, the agent, the judge - no data left your network.\nThis is what control looks like. Not trusting that it works, but knowing when it doesn’t."
+    "text": "Why This Gives You Control\nQuality. You just scored 6/7. Now swap qwen3:8b for llama3:8b and run it again. Did the score go up? You just compared two models in 5 minutes, no manual review.\nRegressions. Your LLM provider quietly updates their model next Tuesday. You wouldn’t know - but your eval would. Run it on a schedule and the regression shows up before your users notice.\nLearning from mistakes. A customer reports your agent got something wrong? Add the question and the correct answer as a new test case. That mistake becomes a regression test - it can’t silently happen again.\nCost. Each run can tell you how many tokens it consumed. Multiply by your rate and you know what running at scale will cost before you commit.\nPrivacy. You ran the local model path? Everything stayed on your machine. The eval, the agent, the judge - no data left your network.\nThis is what control looks like. Not trusting that it works, but knowing when it doesn’t."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "AI-Evals.io",
     "section": "",
-    "text": "AI evals, explained for\n\n\nSoftware engineersProduct managersScientists (coding)Scientists (non-coding)Non-technical foundersEvals give you control, once you define them, you can move fast without regressions and cut through hype with proof.Evals make PoCs verifiable so you see real progress instead of one-off demos, and quality doesn't vanish over time.Evals reduce manual checking and keep experiments grounded, even when you use AI to move faster.Evals help you keep control and use AI tools with more confidence, even without deep coding skills.Evals are provable and auditable, letting you move fast while reducing risk across the org.\n\n\nCompare tools Eval this site\n\n\n\nWait, what are evals?\n\nAutomated checks on AI outputs - from simple keyword matching to LLM-as-judge. Think of them as tests for AI.\n\nRead more about this site.\nJoin the community."
+    "text": "AI evals, explained for\n\n\nSoftware engineersProduct managersScientists (coding)Scientists (non-coding)Non-technical foundersEvals give you control, once you define them, you can move fast without regressions and cut through hype with proof.Evals make PoCs verifiable so you see real progress instead of one-off demos, and quality doesn't vanish over time.Evals reduce manual checking and keep experiments grounded, even when you use AI to move faster.Evals help you keep control and use AI tools with more confidence, even without deep coding skills.Evals are provable and auditable, letting you move fast while reducing risk across the org.\n\n\nCompare tools Eval this site\n\n\n\nWait, what are evals?\n\nAutomated checks on AI outputs - from simple keyword matching to LLM-as-judge. Think of them as exam questions for AI systems.\n\nRead more about this site.\nJoin the community."
   },
   {
-    "objectID": "methodology-long.html",
-    "href": "methodology-long.html",
+    "objectID": "methodology-legend.html",
+    "href": "methodology-legend.html",
     "title": "AI-Evals.io",
     "section": "",
-    "text": "This site prioritizes practical, reproducible evals over marketing claims."
-  },
-  {
-    "objectID": "privacy/index.html",
-    "href": "privacy/index.html",
-    "title": "Privacy",
-    "section": "",
-    "text": "This site is intentionally minimal."
-  },
-  {
-    "objectID": "privacy/index.html#what-we-do-not-track",
-    "href": "privacy/index.html#what-we-do-not-track",
-    "title": "Privacy",
-    "section": "What we do not track",
-    "text": "What we do not track\n\nNo third‑party analytics trackers.\nNo behavioral profiling or ad retargeting."
-  },
-  {
-    "objectID": "privacy/index.html#what-we-do-use",
-    "href": "privacy/index.html#what-we-do-use",
-    "title": "Privacy",
-    "section": "What we do use",
-    "text": "What we do use\n\nQuarto and its standard JS/CSS assets to render the site.\nA newsletter signup form (Buttondown) when enabled. Buttondown stores your email so you can receive updates and unsubscribe any time."
-  },
-  {
-    "objectID": "privacy/index.html#external-links",
-    "href": "privacy/index.html#external-links",
-    "title": "Privacy",
-    "section": "External links",
-    "text": "External links\n\nSome links go to third‑party sites (GitHub, Medium, LinkedIn, etc.). Their privacy policies apply once you leave this site."
-  },
-  {
-    "objectID": "privacy/index.html#contact",
-    "href": "privacy/index.html#contact",
-    "title": "Privacy",
-    "section": "Contact",
-    "text": "Contact\nIf you have privacy questions, open a GitHub issue or contact us via the newsletter reply link."
+    "text": "Symbol\nMeaning\n\n\n\n\nY\nYes - I tested it and it works\n\n\ny\nYes - docs say so, I haven’t verified\n\n\nN\nNo - I tested it, not supported(*)\n\n\nn\nNo - docs say so, I haven’t verified(*)\n\n\nP\nPartial - I tested it, limited support\n\n\np\nPartial - docs say so, I haven’t verified\n\n\n?\nUnknown - no information\n\n\n\n\n(*) In this table, support means built-in or out-of-the-box. If it requires custom code/integration by the user, it is not counted as supported."
   },
   {
     "objectID": "tools/compare-observable.html",
     "href": "tools/compare-observable.html",
     "title": "Tool Comparison (ObservableJS Experimental version - Ignore data)",
     "section": "",
-    "text": "Warning\n\n\n\nDon’t use the data on this page as reference. It’s just a layout example.\n\n\n\n\n\n3591\n\n\n\ntools = FileAttachment(\"../data/tools.json\").json()\n\n\n\n\n\n\n\ncolumns = FileAttachment(\"../data/tool-comparison/columns.json\").json()\n\n\n\n\n\n\n\nviewof answers = Inputs.form({\n  useCase: Inputs.select(\n    [\"RAG\", \"Agents\", \"Chatbot\", \"Classification\", \"I don't know yet\"],\n    {label: \"What are you evaluating?\"}\n  ),\n  experience: Inputs.select(\n    [\"New to evals\", \"Have used evals before\", \"Building eval infrastructure\"],\n    {label: \"Your eval experience?\"}\n  ),\n  teamSize: Inputs.select(\n    [\"Just me\", \"Small team (2-5)\", \"Larger team/org\"],\n    {label: \"Team size?\"}\n  )\n})\n\n\n\n\n\n\n\nrecommendation = {\n  const {useCase, experience} = answers;\n  if (experience === \"New to evals\") {\n    if (useCase === \"RAG\") {\n      return {\n        frameworks: [\"Ragas\", \"Promptfoo\"],\n        reason: \"Ragas has RAG-specific metrics out of the box. Promptfoo is great for learning eval basics.\"\n      };\n    }\n    if (useCase === \"Agents\") {\n      return {\n        frameworks: [\"DeepEval\", \"Promptfoo\"],\n        reason: \"Start with simple evaluation harnesses and build up from there.\"\n      };\n    }\n  }\n  return {\n    frameworks: [\"Promptfoo\", \"DeepEval\"],\n    reason: \"Both have good docs and active communities for getting started.\"\n  };\n}\n\n\n\n\n\n\n\nhtml`&lt;div class=\"recommendation\"&gt;\n  &lt;h3&gt;Recommended: ${recommendation.frameworks.join(\" or \")}&lt;/h3&gt;\n  &lt;p&gt;${recommendation.reason}&lt;/p&gt;\n&lt;/div&gt;`\n\n\n\n\n\n\n\ncolors = ({\n  yes: \"#d6f5d6\",\n  no: \"#f8d7da\",\n  unknown: \"#eeeeee\",\n  yesText: \"#145214\",\n  noText: \"#6b1b1b\",\n  unknownText: \"#666666\"\n})\n\nstyle = html`\n&lt;style&gt;\n.observable-table {\n  width: 100%;\n  border-collapse: collapse;\n  font-size: 0.95rem;\n}\n.observable-table th,\n.observable-table td {\n  border: 1px solid rgba(0,0,0,0.12);\n  padding: 6px 8px;\n  text-align: center;\n}\n.observable-table th:first-child,\n.observable-table td:first-child {\n  text-align: left;\n  position: sticky;\n  left: 0;\n  background: var(--bs-body-bg, #fff);\n  z-index: 1;\n}\n.observable-table .yes {\n  background: ${colors.yes};\n  color: ${colors.yesText};\n  font-weight: 700;\n}\n.observable-table .no {\n  background: ${colors.no};\n  color: ${colors.noText};\n  font-weight: 700;\n}\n.observable-table .unknown {\n  background: ${colors.unknown};\n  color: ${colors.unknownText};\n  font-weight: 700;\n}\n.observable-table thead th {\n  writing-mode: vertical-rl;\n  transform: rotate(180deg);\n  white-space: nowrap;\n  height: 140px;\n  vertical-align: bottom;\n  padding: 6px 4px;\n}\n&lt;/style&gt;\n`\n\nbuildTable = (cols, dataRows) =&gt; {\n  const table = html`&lt;table class=\"observable-table\"&gt;&lt;/table&gt;`;\n  const thead = html`&lt;thead&gt;&lt;/thead&gt;`;\n  const headerRow = html`&lt;tr&gt;&lt;/tr&gt;`;\n  for (const col of cols) {\n    headerRow.append(html`&lt;th&gt;${col}&lt;/th&gt;`);\n  }\n  thead.append(headerRow);\n\n  const tbody = html`&lt;tbody&gt;&lt;/tbody&gt;`;\n  for (const row of dataRows) {\n    const tr = html`&lt;tr&gt;&lt;/tr&gt;`;\n    for (const col of cols) {\n      const val = row[col] ?? \"?\";\n      let cls = \"\";\n      if (val === \"Y\") cls = \"yes\";\n      else if (val === \"N\") cls = \"no\";\n      else cls = \"unknown\";\n      tr.append(html`&lt;td class=${cls}&gt;${val}&lt;/td&gt;`);\n    }\n    tbody.append(tr);\n  }\n\n  table.append(thead);\n  table.append(tbody);\n  return table\n}\n\ncontextCols = columns.columns.context\ncoreCols = columns.columns.core\nfullCols = columns.columns.full\n\ncontainer = html`&lt;div&gt;&lt;/div&gt;`\ncontainer.append(style);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncontainer.append(html`&lt;h2&gt;Context&lt;/h2&gt;`);\n\n\n\n\n\n\n\ncontainer.append(buildTable(contextCols, tools.rows));\n\n\n\n\n\n\n\ncontainer.append(html`&lt;h2&gt;Core capabilities&lt;/h2&gt;`);\n\n\n\n\n\n\n\ncontainer.append(buildTable(coreCols, tools.rows));\n\n\n\n\n\n\n\ncontainer.append(html`&lt;h2&gt;Everything all at once (Experimental)&lt;/h2&gt;`);\n\n\n\n\n\n\n\ncontainer.append(buildTable(fullCols, tools.rows));\n\n\n\n\n\n\n\ncontainer"
+    "text": "Warning\n\n\n\nDon’t use the data on this page as reference. It’s just a layout example.\n\n\n\n\n\n4587\n\n\n\ntools = FileAttachment(\"../data/tools.json\").json()\n\n\n\n\n\n\n\ncolumns = FileAttachment(\"../data/tool-comparison/columns.json\").json()\n\n\n\n\n\n\n\nviewof answers = Inputs.form({\n  useCase: Inputs.select(\n    [\"RAG\", \"Agents\", \"Chatbot\", \"Classification\", \"I don't know yet\"],\n    {label: \"What are you evaluating?\"}\n  ),\n  experience: Inputs.select(\n    [\"New to evals\", \"Have used evals before\", \"Building eval infrastructure\"],\n    {label: \"Your eval experience?\"}\n  ),\n  teamSize: Inputs.select(\n    [\"Just me\", \"Small team (2-5)\", \"Larger team/org\"],\n    {label: \"Team size?\"}\n  )\n})\n\n\n\n\n\n\n\nrecommendation = {\n  const {useCase, experience} = answers;\n  if (experience === \"New to evals\") {\n    if (useCase === \"RAG\") {\n      return {\n        frameworks: [\"Ragas\", \"Promptfoo\"],\n        reason: \"Ragas has RAG-specific metrics out of the box. Promptfoo is great for learning eval basics.\"\n      };\n    }\n    if (useCase === \"Agents\") {\n      return {\n        frameworks: [\"DeepEval\", \"Promptfoo\"],\n        reason: \"Start with simple evaluation harnesses and build up from there.\"\n      };\n    }\n  }\n  return {\n    frameworks: [\"Promptfoo\", \"DeepEval\"],\n    reason: \"Both have good docs and active communities for getting started.\"\n  };\n}\n\n\n\n\n\n\n\nhtml`&lt;div class=\"recommendation\"&gt;\n  &lt;h3&gt;Recommended: ${recommendation.frameworks.join(\" or \")}&lt;/h3&gt;\n  &lt;p&gt;${recommendation.reason}&lt;/p&gt;\n&lt;/div&gt;`\n\n\n\n\n\n\n\ncolors = ({\n  yes: \"#d6f5d6\",\n  no: \"#f8d7da\",\n  unknown: \"#eeeeee\",\n  yesText: \"#145214\",\n  noText: \"#6b1b1b\",\n  unknownText: \"#666666\"\n})\n\nstyle = html`\n&lt;style&gt;\n.observable-table {\n  width: 100%;\n  border-collapse: collapse;\n  font-size: 0.95rem;\n}\n.observable-table th,\n.observable-table td {\n  border: 1px solid rgba(0,0,0,0.12);\n  padding: 6px 8px;\n  text-align: center;\n}\n.observable-table th:first-child,\n.observable-table td:first-child {\n  text-align: left;\n  position: sticky;\n  left: 0;\n  background: var(--bs-body-bg, #fff);\n  z-index: 1;\n}\n.observable-table .yes {\n  background: ${colors.yes};\n  color: ${colors.yesText};\n  font-weight: 700;\n}\n.observable-table .no {\n  background: ${colors.no};\n  color: ${colors.noText};\n  font-weight: 700;\n}\n.observable-table .unknown {\n  background: ${colors.unknown};\n  color: ${colors.unknownText};\n  font-weight: 700;\n}\n.observable-table thead th {\n  writing-mode: vertical-rl;\n  transform: rotate(180deg);\n  white-space: nowrap;\n  height: 140px;\n  vertical-align: bottom;\n  padding: 6px 4px;\n}\n&lt;/style&gt;\n`\n\nbuildTable = (cols, dataRows) =&gt; {\n  const table = html`&lt;table class=\"observable-table\"&gt;&lt;/table&gt;`;\n  const thead = html`&lt;thead&gt;&lt;/thead&gt;`;\n  const headerRow = html`&lt;tr&gt;&lt;/tr&gt;`;\n  for (const col of cols) {\n    headerRow.append(html`&lt;th&gt;${col}&lt;/th&gt;`);\n  }\n  thead.append(headerRow);\n\n  const tbody = html`&lt;tbody&gt;&lt;/tbody&gt;`;\n  for (const row of dataRows) {\n    const tr = html`&lt;tr&gt;&lt;/tr&gt;`;\n    for (const col of cols) {\n      const val = row[col] ?? \"?\";\n      let cls = \"\";\n      if (val === \"Y\") cls = \"yes\";\n      else if (val === \"N\") cls = \"no\";\n      else cls = \"unknown\";\n      tr.append(html`&lt;td class=${cls}&gt;${val}&lt;/td&gt;`);\n    }\n    tbody.append(tr);\n  }\n\n  table.append(thead);\n  table.append(tbody);\n  return table\n}\n\ncontextCols = columns.columns.context\ncoreCols = columns.columns.core\nfullCols = columns.columns.full\n\ncontainer = html`&lt;div&gt;&lt;/div&gt;`\ncontainer.append(style);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncontainer.append(html`&lt;h2&gt;Context&lt;/h2&gt;`);\n\n\n\n\n\n\n\ncontainer.append(buildTable(contextCols, tools.rows));\n\n\n\n\n\n\n\ncontainer.append(html`&lt;h2&gt;Core capabilities&lt;/h2&gt;`);\n\n\n\n\n\n\n\ncontainer.append(buildTable(coreCols, tools.rows));\n\n\n\n\n\n\n\ncontainer.append(html`&lt;h2&gt;Everything all at once (Experimental)&lt;/h2&gt;`);\n\n\n\n\n\n\n\ncontainer.append(buildTable(fullCols, tools.rows));\n\n\n\n\n\n\n\ncontainer"
   }
 ]

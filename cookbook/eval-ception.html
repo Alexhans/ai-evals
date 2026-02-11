@@ -310,7 +310,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Cookbook</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resources/index.html"> 
+    <a class="nav-link" href="../links/index.html"> 
 <span class="menu-text">Links</span></a>
   </li>  
   <li class="nav-item">
@@ -436,7 +436,7 @@ Note
 </ul>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/Alexhans/eval-ception</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> eval-ception</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> promptfoo/requirements.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-e</span> .</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>You want to run everything locally. The agent uses Playwright to crawl the site and a local model to reason about the content. No API keys, no cloud calls.</p>
@@ -453,10 +453,7 @@ Note
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/Alexhans/eval-ception</span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> eval-ception</span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> agent</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="ex">playwright</span> install <span class="at">--with-deps</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ..</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-e</span> .</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <p>You build your own agents or already have a service running. You’ll write a small provider that Promptfoo calls with each question - it could call your local code, or hit an HTTP endpoint you already have deployed.</p>
@@ -469,7 +466,7 @@ Note
 </ul>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/Alexhans/eval-ception</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> eval-ception</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>See <code>promptfoo/provider.py</code> for the interface your provider needs to implement - it’s a single <code>call_api(prompt, options, context)</code> function that returns <code>{"output": "your answer"}</code>.</p>
+<p>See <code>promptfoo/ollama_provider.py</code> for the interface your provider needs to implement - it’s a single <code>call_api(prompt, options, context)</code> function that returns <code>{"output": "your answer"}</code>.</p>
 </div>
 </div>
 </div>
@@ -517,21 +514,25 @@ Note
 </section>
 <section id="run-it" class="level2">
 <h2 class="anchored" data-anchor-id="run-it">Run It</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> promptfoo</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">npx</span> promptfoo eval</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Promptfoo runs each question through the agent, collects the answers, and checks the assertions. When it’s done:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">npx</span> promptfoo view</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>This opens a local dashboard where you can see every question, the agent’s answer, and whether it passed or failed.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">baseline-agent</span> <span class="at">--log-level</span> DEBUG <span class="st">"Who created the website ai-evals.io?"</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> promptfoo</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="ex">npx</span> promptfoo eval <span class="at">-c</span> promptfooconfig.yaml <span class="at">--filter-providers</span> <span class="st">"^ollama_agent$"</span> <span class="at">-n</span> 1 <span class="at">--verbose</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="ex">npx</span> promptfoo view</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co"># full exam</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="ex">npx</span> promptfoo eval <span class="at">-c</span> promptfooconfig.yaml <span class="at">--filter-providers</span> <span class="st">"^ollama_agent$"</span> <span class="at">--verbose</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Promptfoo runs each question through the agent, collects the answers, and checks the assertions. <code>promptfoo view</code> opens a local dashboard where you can inspect every question, answer, and assertion result.</p>
 </section>
 <section id="what-youll-see" class="level2">
 <h2 class="anchored" data-anchor-id="what-youll-see">What You’ll See</h2>
-<p>In our runs, the agent scored <strong>4/6 (66.7%)</strong> on its first try. That’s a failing grade - and that’s useful information.</p>
+<p>In our runs, the agent scored <strong>6/7 (85.7%)</strong> on one baseline run. A failing test is still useful information - that’s the point.</p>
 <p>You’ll probably look at some of the tests and think “that assertion is wrong” or “I’d ask the question differently” or “this should check for structured output, not just keywords”. Good. That instinct is the whole point. You’re already thinking about what “correct” means for this domain - and that’s exactly what building evals teaches you.</p>
 <p>How would you improve the exam? Change a test case, run it again, and see what happens.</p>
 </section>
 <section id="why-this-gives-you-control" class="level2">
 <h2 class="anchored" data-anchor-id="why-this-gives-you-control">Why This Gives You Control</h2>
-<p><strong>Quality.</strong> You just scored 4/6. Now swap <code>qwen3:8b</code> for <code>llama3:8b</code> and run it again. Did the score go up? You just compared two models in 5 minutes, no manual review.</p>
+<p><strong>Quality.</strong> You just scored 6/7. Now swap <code>qwen3:8b</code> for <code>llama3:8b</code> and run it again. Did the score go up? You just compared two models in 5 minutes, no manual review.</p>
 <p><strong>Regressions.</strong> Your LLM provider quietly updates their model next Tuesday. You wouldn’t know - but your eval would. Run it on a schedule and the regression shows up before your users notice.</p>
 <p><strong>Learning from mistakes.</strong> A customer reports your agent got something wrong? Add the question and the correct answer as a new test case. That mistake becomes a regression test - it can’t silently happen again.</p>
 <p><strong>Cost.</strong> Each run can tell you how many tokens it consumed. Multiply by your rate and you know what running at scale will cost before you commit.</p>

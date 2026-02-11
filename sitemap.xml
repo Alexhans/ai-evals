@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ai-evals.io/tools/compare.html</loc>
-    <lastmod>2026-02-08T21:58:00.678Z</lastmod>
+    <lastmod>2026-02-11T01:48:16.262Z</lastmod>
   </url>
   <url>
-    <loc>https://ai-evals.io/resources/index.html</loc>
-    <lastmod>2026-02-01T22:19:44.063Z</lastmod>
+    <loc>https://ai-evals.io/privacy/index.html</loc>
+    <lastmod>2026-02-01T02:42:04.598Z</lastmod>
   </url>
   <url>
-    <loc>https://ai-evals.io/methodology-short.html</loc>
-    <lastmod>2026-02-08T21:10:42.375Z</lastmod>
+    <loc>https://ai-evals.io/methodology-long.html</loc>
+    <lastmod>2026-02-08T21:55:08.167Z</lastmod>
   </url>
   <url>
-    <loc>https://ai-evals.io/methodology-legend.html</loc>
-    <lastmod>2026-02-08T21:52:31.855Z</lastmod>
+    <loc>https://ai-evals.io/links/index.html</loc>
+    <lastmod>2026-02-11T00:34:46.037Z</lastmod>
   </url>
   <url>
     <loc>https://ai-evals.io/cookbook/index.html</loc>
-    <lastmod>2026-02-08T21:46:50.127Z</lastmod>
+    <lastmod>2026-02-11T00:26:34.459Z</lastmod>
   </url>
   <url>
     <loc>https://ai-evals.io/community/index.html</loc>
@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://ai-evals.io/about/index.html</loc>
-    <lastmod>2026-02-08T23:31:26.642Z</lastmod>
+    <lastmod>2026-02-11T00:26:25.447Z</lastmod>
   </url>
   <url>
     <loc>https://ai-evals.io/community/001-launch.html</loc>
@@ -34,19 +34,19 @@
   </url>
   <url>
     <loc>https://ai-evals.io/cookbook/eval-ception.html</loc>
-    <lastmod>2026-02-08T21:01:40.275Z</lastmod>
+    <lastmod>2026-02-10T23:18:51.886Z</lastmod>
   </url>
   <url>
     <loc>https://ai-evals.io/index.html</loc>
-    <lastmod>2026-02-08T23:36:04.493Z</lastmod>
+    <lastmod>2026-02-11T00:14:00.958Z</lastmod>
   </url>
   <url>
-    <loc>https://ai-evals.io/methodology-long.html</loc>
-    <lastmod>2026-02-08T21:55:08.167Z</lastmod>
+    <loc>https://ai-evals.io/methodology-legend.html</loc>
+    <lastmod>2026-02-11T00:47:08.999Z</lastmod>
   </url>
   <url>
-    <loc>https://ai-evals.io/privacy/index.html</loc>
-    <lastmod>2026-02-01T02:42:04.598Z</lastmod>
+    <loc>https://ai-evals.io/methodology-short.html</loc>
+    <lastmod>2026-02-08T21:10:42.375Z</lastmod>
   </url>
   <url>
     <loc>https://ai-evals.io/tools/compare-observable.html</loc>

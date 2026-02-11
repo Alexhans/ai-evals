@@ -27,7 +27,12 @@
       "deterministic_tests": "Y",
       "caching": "N",
       "tool_call_validation": "?",
-      "run_comparison": "?"
+      "run_comparison": "?",
+      "opentelemetry_tracing": "y",
+      "chat_threads": "?",
+      "red_teaming": "?",
+      "model_comparison": "?",
+      "web_ui": "y"
     },
     {
       "name": "Braintrust",
@@ -39,7 +44,12 @@
       "deterministic_tests": "?",
       "caching": "?",
       "tool_call_validation": "?",
-      "run_comparison": "?"
+      "run_comparison": "?",
+      "opentelemetry_tracing": "?",
+      "chat_threads": "?",
+      "red_teaming": "?",
+      "model_comparison": "?",
+      "web_ui": "?"
     },
     {
       "name": "DeepEval",
@@ -48,11 +58,11 @@
       "runtime_language": "PY",
       "is_open_source": "Y",
       "can_self_host": "Y",
-      "deterministic_tests": "N",
+      "deterministic_tests": "P",
       "caching": "n",
       "tool_call_validation": "y",
       "run_comparison": "y",
-      "opentelemetry_tracing": "?",
+      "opentelemetry_tracing": "y",
       "chat_threads": "?",
       "red_teaming": "y",
       "model_comparison": "y",
@@ -69,7 +79,11 @@
       "caching": "?",
       "tool_call_validation": "?",
       "run_comparison": "?",
-      "chat_threads": "?"
+      "opentelemetry_tracing": "?",
+      "chat_threads": "?",
+      "red_teaming": "?",
+      "model_comparison": "?",
+      "web_ui": "?"
     },
     {
       "name": "Langfuse",
@@ -81,7 +95,12 @@
       "deterministic_tests": "?",
       "caching": "?",
       "tool_call_validation": "?",
-      "run_comparison": "?"
+      "run_comparison": "?",
+      "opentelemetry_tracing": "?",
+      "chat_threads": "?",
+      "red_teaming": "?",
+      "model_comparison": "?",
+      "web_ui": "?"
     },
     {
       "name": "LangSmith",
@@ -93,7 +112,12 @@
       "deterministic_tests": "?",
       "caching": "?",
       "tool_call_validation": "?",
-      "run_comparison": "?"
+      "run_comparison": "?",
+      "opentelemetry_tracing": "?",
+      "chat_threads": "?",
+      "red_teaming": "?",
+      "model_comparison": "?",
+      "web_ui": "?"
     },
     {
       "name": "Promptfoo",
@@ -104,8 +128,9 @@
       "can_self_host": "Y",
       "deterministic_tests": "Y",
       "caching": "Y",
-      "tool_call_validation": "P",
+      "tool_call_validation": "?",
       "run_comparison": "Y",
+      "opentelemetry_tracing": "?",
       "chat_threads": "p",
       "red_teaming": "y",
       "model_comparison": "y",
@@ -121,7 +146,12 @@
       "deterministic_tests": "?",
       "caching": "?",
       "tool_call_validation": "?",
-      "run_comparison": "?"
+      "run_comparison": "?",
+      "opentelemetry_tracing": "?",
+      "chat_threads": "?",
+      "red_teaming": "?",
+      "model_comparison": "?",
+      "web_ui": "?"
     },
     {
       "name": "Ragas",
@@ -133,7 +163,12 @@
       "deterministic_tests": "?",
       "caching": "?",
       "tool_call_validation": "?",
-      "run_comparison": "?"
+      "run_comparison": "?",
+      "opentelemetry_tracing": "?",
+      "chat_threads": "?",
+      "red_teaming": "?",
+      "model_comparison": "?",
+      "web_ui": "?"
     }
   ]
 }
