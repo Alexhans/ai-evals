@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – AI-Evals.io</title>
+<title>Cert Viewer – AI-Evals.io</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed about-no-title fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -286,7 +286,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Community</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../about/index.html" aria-current="page"> 
+    <a class="nav-link" href="../about/index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -315,7 +315,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Cert Viewer</h1>
 </div>
 
 
@@ -332,138 +332,354 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="maintainer" class="level2">
-<h2 class="anchored" data-anchor-id="maintainer">Maintainer</h2>
-<div id="de0baeab" class="cell" data-execution_count="1">
-<div class="cell-output cell-output-display cell-output-markdown">
-<p>By <strong><a href="https://linktr.ee/alex.guglielmone.nemi">Alex Guglielmone Nemi</a></strong>, 17 years building software products and helping cross-functional teams work together.</p>
+<div id="eval-cert-root">
+
 </div>
-</div>
-<p><a href="https://www.linkedin.com/in/alex-guglielmone-nemi/">LinkedIn</a> • <a href="https://github.com/alexhans">GitHub</a> • <a href="https://buttondown.com/ai-evals">Newsletter</a></p>
-</section>
-<section id="what-this-is" class="level2">
-<h2 class="anchored" data-anchor-id="what-this-is">What This Is</h2>
-<p>AI-Evals.io helps builders understand why evaluation matters and choose LLM eval tools through hands-on comparison and practical starting points, so workflows can be shared, maintained, and improved over time.</p>
-</section>
-<section id="who-this-is-for-and-why" class="level2">
-<h2 class="anchored" data-anchor-id="who-this-is-for-and-why">Who This Is For And Why</h2>
-<p>When I say “builders” I mean anyone creating workflows with LLMs. Individual experimentation might be easier than ever but sharing, maintaining and improving workflows - especially when collaborating with others - can quickly become labor intensive.</p>
-<p>This site provides practical starting points and evaluation patterns that help with cost, time, and collaboration once workflows grow beyond a single person.</p>
-<details>
-<summary>
-Methodology
-</summary>
-<p>This site prioritizes practical, reproducible evals over marketing claims.</p>
-<div class="eval-legend">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 47%">
-<col style="width: 52%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Symbol</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="eval-chip yes proven">Y</span></td>
-<td>Yes - I tested it and it works</td>
-</tr>
-<tr class="even">
-<td><span class="eval-chip yes doc">y</span></td>
-<td>Yes - docs say so, I haven’t verified</td>
-</tr>
-<tr class="odd">
-<td><span class="eval-chip no proven">N</span></td>
-<td>No - I tested it, not supported<sup>(*)</sup></td>
-</tr>
-<tr class="even">
-<td><span class="eval-chip no doc">n</span></td>
-<td>No - docs say so, I haven’t verified<sup>(*)</sup></td>
-</tr>
-<tr class="odd">
-<td><span class="eval-chip partial">P</span></td>
-<td>Partial - I tested it, limited support</td>
-</tr>
-<tr class="even">
-<td><span class="eval-chip partial doc">p</span></td>
-<td>Partial - docs say so, I haven’t verified</td>
-</tr>
-<tr class="odd">
-<td><span class="eval-chip unknown">?</span></td>
-<td>Unknown - no information</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><sup>(*)</sup> In this table, support means built-in or out-of-the-box. If it requires custom code/integration by the user, it is not counted as supported.</li>
-</ul>
-</div>
-</details>
-<details>
-<summary>
-Why I built this
-</summary>
-<p>I’ve spent my career building products and helping cross-functional teams collaborate at the right level of complexity. One thing I’ve learned is that automation really pays off when it’s easy to change <a href="https://www.youtube.com/watch?v=c8AzqMr87gQ">(ETC)</a> - otherwise you can’t iterate fast or explore alternatives.</p>
-<p>The principles that guide my thinking around testability and simplicity come from being accountable for live systems over many years. You learn how small decisions compound, how fear sets in when it’s hard to prove things quickly, how feedback loops make speed possible without losing context, and how difficult it is to roll back complexity once it takes hold. When working with others, I’ve found that progress depends on sharing those mental models - but also on having simple ways to practice them through real examples. My goal here is to smooth that path as much as possible, so people can automate the churny parts of their work and move on, instead of automating and hoping for the best - or quietly handing off the hard parts and losing control of the end-to-end system.</p>
-<p>With LLMs, that comes down to evaluation (or “evals,” as it’s commonly called).</p>
-<p>You trust what you can test. Evaluation is how automation stays reliable. But today, eval tools are hard to compare, hard to get started with, and often require commitment before you can even experiment. I built this site to make it easier to try things quickly, understand the tradeoffs, and keep control: comparison data and time-boxed starting points instead of premature decisions.</p>
-<p>Evals also shouldn’t belong to a single role. Anyone working with LLM workflows shapes the outcome. We need shared mental models for what “good enough” means, without outsourcing responsibility or accountability. Evaluation thinking should start on day one.</p>
-<p>And finally, good evaluation goes beyond correctness. Responsible automation includes operational and ethical constraints: rate limiting, bias checks, safety validation. This site treats those as first-class concerns, alongside practical implementation guidance.</p>
-</details>
-<details>
-<summary>
-Principles of comparisons
-</summary>
-<ul>
-<li><strong>Quality over assumptions</strong>: I’d rather have “unknown” than overstate.</li>
-<li><strong>Practitioner-focused</strong>: I compare based on real production needs, not theoretical features.</li>
-<li><strong>Tool-agnostic</strong>: Tools come and go. This may even help many improve at the same time.</li>
-<li><strong>Evaluation-first</strong>: Test before you ship. Measure what matters.</li>
-<li><strong>Living resource</strong>: The comparison evolves as I test more tools and features.</li>
-</ul>
-</details>
-<details>
-<summary>
-Platform choices
-</summary>
-<ul>
-<li><strong>Quarto</strong>: Separates data from presentation, making updates easy and transparent</li>
-<li><strong>Buttondown</strong>: Privacy-respecting newsletter platform with easy unsubscribe and data export</li>
-<li><strong>JSON API</strong>: All comparison data accessible programmatically for tools and LLM agents</li>
-<li><strong>Open source</strong>: Full source code will be available on GitHub for transparency and contributions soon.</li>
-</ul>
-<a href="../privacy/">More on privacy</a>
-</details>
-<details>
-<summary>
-What’s next
-</summary>
-<p><strong>Short term:</strong></p>
-<ul>
-<li>Expand tool coverage with hands-on testing
-<ul>
-<li>Refine data models and how to communicate nuance without losing the value of the discrete answers</li>
-</ul></li>
-<li>Evaluation patterns for Apache Airflow + GenAI workflows (<a href="https://alexhans.github.io/posts/talk.toward-a-shared-vision-of-llm-evals-in-airflow-ecosystem.html">related talk</a>)</li>
-<li>Add <a href="../tools/compare-observable.html">interactive decision trees</a> to help users make decisions, such as which tool to try out</li>
-<li>Create practical <a href="../cookbook/">cookbooks</a> for common evaluation patterns</li>
-<li>Push security defaults with one-liners so it feels there’s no tradeoff. If something is hard, people won’t default to it.</li>
-</ul>
-<p><strong>Long term:</strong></p>
-<ul>
-<li>Build evaluation-first thinking into how people approach LLM automation</li>
-<li>Grow a community around responsible, effective evaluation practices</li>
-<li>Make testing as natural as prompting for anyone working with LLMs</li>
-</ul>
-</details>
-<hr>
-<p><strong>Feedback welcome:</strong> <a href="https://linktr.ee/alex.guglielmone.nemi">Reach out directly (Linktree)</a> or join <a href="https://github.com/Alexhans/eval-ception/discussions">Eval-Ception Discussions</a>.</p>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel">
+
+// ─── DATA LOADING ─────────────────────────────────────────────────────────────
+// Reads ?cert=<url> from the query string and fetches the cert JSON.
+// Example:
+//   viewer.html?cert=https://raw.githubusercontent.com/Alexhans/eval-ception/main/certs/simple-exam/simple-exam.site-agent.cert.json
+//
+// For local dev, pass a relative path:
+//   viewer.html?cert=./certs/simple-exam/simple-exam.site-agent.cert.json
+
+function useCert() {
+  const [data, setData]     = React.useState(null);
+  const [error, setError]   = React.useState(null);
+  const [loading, setLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const url = params.get("cert");
+
+    if (!url) {
+      setError("No cert URL provided. Add ?cert=<url> to the page URL.");
+      setLoading(false);
+      return;
+    }
+
+    fetch(url)
+      .then(r => {
+        if (!r.ok) throw new Error(`HTTP ${r.status} fetching ${url}`);
+        return r.json();
+      })
+      .then(json => { setData(json); setLoading(false); })
+      .catch(e  => { setError(e.message); setLoading(false); });
+  }, []);
+
+  return { data, error, loading };
+}
+
+// ─── DERIVED STATS ────────────────────────────────────────────────────────────
+function deriveStats(items) {
+  const total    = items.length;
+  const passed   = items.filter(i => i.passed).length;
+  const overall  = Math.round((items.reduce((s, i) => s + i.score, 0) / total) * 100);
+  const detItems = items.filter(i => i.check_type === "deterministic");
+  const llmItems = items.filter(i => i.check_type === "llm-as-judge");
+  const detPct   = detItems.length ? Math.round((detItems.reduce((s, i) => s + i.score, 0) / detItems.length) * 100) : null;
+  const llmPct   = llmItems.length ? Math.round((llmItems.reduce((s, i) => s + i.score, 0) / llmItems.length) * 100) : null;
+  return { total, passed, failed: total - passed, overall, detPct, llmPct };
+}
+
+// ─── THEME ────────────────────────────────────────────────────────────────────
+const C = {
+  bg: "#07090f", surface: "#0f1320", border: "#1a2035",
+  text: "#e2e8f0", muted: "#64748b", dim: "#374151",
+  green: "#22c55e", red: "#ef4444", amber: "#f59e0b", blue: "#60a5fa",
+  mono: "'DM Mono', monospace", sans: "'DM Sans', sans-serif",
+};
+function pctColor(p)  { return p >= 90 ? C.green : p >= 70 ? C.amber : C.red; }
+function scoreColor(s){ return s >= 0.9 ? C.green : s >= 0.7 ? C.amber : C.red; }
+
+// ─── ATOMS ────────────────────────────────────────────────────────────────────
+function Ring({ score, size = 88 }) {
+  const r = (size / 2) * 0.76, circ = 2 * Math.PI * r;
+  const color = pctColor(score);
+  return (
+    <svg width={size} height={size} style={{ transform: "rotate(-90deg)" }}>
+      <circle cx={size/2} cy={size/2} r={r} fill="none" stroke={C.border} strokeWidth={size*0.1} />
+      <circle cx={size/2} cy={size/2} r={r} fill="none" stroke={color}
+        strokeWidth={size*0.1} strokeDasharray={`${(score/100)*circ} ${circ}`} strokeLinecap="round" />
+      <text x="50%" y="50%" textAnchor="middle" dominantBaseline="central"
+        fill={color} fontSize={size*0.26} fontWeight="700" fontFamily={C.mono}
+        style={{ transform: "rotate(90deg)", transformOrigin: "center" }}>{score}</text>
+    </svg>
+  );
+}
+
+function Pill({ label, color, bg }) {
+  return <span style={{ fontSize: 10, fontWeight: 600, padding: "2px 7px", borderRadius: 4,
+    background: bg, color, fontFamily: C.mono, letterSpacing: "0.05em",
+    textTransform: "uppercase", whiteSpace: "nowrap" }}>{label}</span>;
+}
+
+function Check({ passed }) {
+  return <span style={{ display: "inline-flex", alignItems: "center", justifyContent: "center",
+    width: 20, height: 20, borderRadius: "50%", flexShrink: 0,
+    background: passed ? "rgba(34,197,94,0.15)" : "rgba(239,68,68,0.15)",
+    color: passed ? C.green : C.red, fontSize: 11, fontWeight: 700 }}>
+    {passed ? "✓" : "✕"}
+  </span>;
+}
+
+// ─── QUESTION CARD ─────────────────────────────────────────────────────────────
+function QuestionCard({ item }) {
+  const [open, setOpen] = React.useState(false);
+  const isLLM = item.check_type === "llm-as-judge";
+  return (
+    <div style={{ border: `1px solid ${item.passed ? "rgba(34,197,94,0.2)" : "rgba(239,68,68,0.25)"}`,
+      borderRadius: 10, overflow: "hidden",
+      background: item.passed ? "rgba(34,197,94,0.03)" : "rgba(239,68,68,0.04)", marginBottom: 10 }}>
+      <button onClick={() => setOpen(o => !o)} style={{ width: "100%", display: "grid",
+        gridTemplateColumns: "28px 40px 1fr auto auto 20px", alignItems: "center", gap: 10,
+        padding: "12px 16px", background: "transparent", border: "none", cursor: "pointer", textAlign: "left" }}>
+        <Check passed={item.passed} />
+        <span style={{ fontFamily: C.mono, fontSize: 11, color: C.muted, fontWeight: 600 }}>{item.id}</span>
+        <span style={{ fontSize: 13, color: C.text, lineHeight: 1.4 }}>{item.question}</span>
+        {item.check_type && <Pill label={isLLM ? "llm-judge" : "deterministic"}
+          color={isLLM ? C.blue : C.amber}
+          bg={isLLM ? "rgba(96,165,250,0.12)" : "rgba(245,158,11,0.12)"} />}
+        <span style={{ fontFamily: C.mono, fontSize: 13, fontWeight: 700,
+          color: scoreColor(item.score), minWidth: 28, textAlign: "right" }}>
+          {item.score === 1 ? "1.0" : item.score.toFixed(1)}
+        </span>
+        <span style={{ color: C.muted, fontSize: 14, display: "inline-block",
+          transition: "transform 0.2s", transform: open ? "rotate(90deg)" : "rotate(0deg)" }}>›</span>
+      </button>
+      {open && (
+        <div style={{ borderTop: `1px solid ${C.border}`, padding: "16px 16px 16px 54px" }}>
+          {(item.expected || item.output) && (
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14, marginBottom: 12 }}>
+              {[["Expected", item.expected, "#94a3b8"], ["Agent Output", item.output, C.text]]
+                .filter(([, v]) => v)
+                .map(([label, text, col]) => (
+                <div key={label}>
+                  <p style={{ fontSize: 10, color: C.muted, fontFamily: C.mono,
+                    textTransform: "uppercase", letterSpacing: "0.1em", margin: "0 0 6px" }}>{label}</p>
+                  <p style={{ fontSize: 12, color: col, margin: 0, lineHeight: 1.6,
+                    fontFamily: label === "Expected" ? C.mono : C.sans,
+                    background: C.bg, padding: "8px 10px", borderRadius: 6 }}>{text}</p>
+                </div>
+              ))}
+            </div>
+          )}
+          {item.grader_note && (
+            <div style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
+              <span style={{ fontSize: 10, color: C.muted, fontFamily: C.mono,
+                textTransform: "uppercase", letterSpacing: "0.1em", whiteSpace: "nowrap" }}>Grader note</span>
+              <span style={{ fontSize: 12, color: item.passed ? C.green : C.red, lineHeight: 1.5 }}>
+                {item.grader_note}
+              </span>
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─── LOADING / ERROR STATES ───────────────────────────────────────────────────
+function Shell({ children }) {
+  return <div style={{ minHeight: "40vh", background: C.bg, fontFamily: C.sans,
+    color: C.text, padding: "32px 16px", display: "flex",
+    flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+    {children}
+  </div>;
+}
+
+// ─── MAIN VIEWER ─────────────────────────────────────────────────────────────
+const TABS = ["Certificate", "Questions", "Schema"];
+
+function EvalCert() {
+  const { data: d, error, loading } = useCert();
+  const [tab, setTab] = React.useState("Certificate");
+
+  if (loading) return <Shell><span style={{ color: C.muted, fontFamily: C.mono, fontSize: 13 }}>Loading cert…</span></Shell>;
+  if (error)   return <Shell>
+    <span style={{ color: C.red, fontFamily: C.mono, fontSize: 13, maxWidth: 500, textAlign: "center" }}>{error}</span>
+    <span style={{ color: C.muted, fontFamily: C.mono, fontSize: 11, marginTop: 12 }}>
+      Usage: viewer.html?cert=&lt;raw-json-url&gt;
+    </span>
+  </Shell>;
+
+  const s = deriveStats(d.items);
+  const examLabel = d.exam ? `${d.exam.id} v${d.exam.version}` : "unknown exam";
+
+  return (
+    <div style={{ minHeight: "100vh", background: C.bg, fontFamily: C.sans,
+      color: C.text, padding: "32px 16px 64px", display: "flex",
+      flexDirection: "column", alignItems: "center" }}>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+      {/* Header */}
+      <div style={{ width: "100%", maxWidth: 780, marginBottom: 20 }}>
+        <span style={{ fontSize: 10, letterSpacing: "0.14em", textTransform: "uppercase",
+          color: C.muted, fontFamily: C.mono, display: "block", marginBottom: 12 }}>
+          AI Agent Evaluation Certificate · {examLabel}
+        </span>
+        <div style={{ display: "flex", gap: 4 }}>
+          {TABS.map(t => (
+            <button key={t} onClick={() => setTab(t)} style={{ padding: "6px 16px", borderRadius: 6,
+              border: "none", cursor: "pointer", fontFamily: C.sans, fontSize: 13, fontWeight: 500,
+              background: tab === t ? C.border : "transparent",
+              color: tab === t ? C.text : C.muted }}>
+              {t}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* ── CERTIFICATE ── */}
+      {tab === "Certificate" && (
+        <div style={{ width: "100%", maxWidth: 780, background: C.surface,
+          borderRadius: 16, border: `1px solid ${C.border}`, overflow: "hidden" }}>
+
+          <div style={{ background: "linear-gradient(135deg, #0c1124 0%, #111c35 100%)",
+            padding: "26px 28px", borderBottom: `1px solid ${C.border}`,
+            display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 16 }}>
+            <div style={{ flex: 1 }}>
+              {d.agent?.operator && <span style={{ fontSize: 10, color: C.muted, fontFamily: C.mono,
+                textTransform: "uppercase", letterSpacing: "0.12em" }}>{d.agent.operator}</span>}
+              <h1 style={{ fontSize: 22, fontWeight: 700, color: "#f1f5f9", margin: "6px 0 8px", lineHeight: 1.2 }}>
+                {d.agent?.name || d.agent?.id || "Anonymous Agent"}
+              </h1>
+              {d.agent?.model_id && <p style={{ fontSize: 12, color: C.muted, margin: "0 0 6px", fontFamily: C.mono }}>
+                {d.agent.model_id}{d.agent.version ? ` · ${d.agent.version}` : ""}{d.agent.commit ? ` · ${d.agent.commit}` : ""}
+              </p>}
+              {d.agent?.purpose && <p style={{ fontSize: 12, color: "#64748b", margin: 0 }}>{d.agent.purpose}</p>}
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 4,
+              padding: "12px 18px", borderRadius: 12,
+              background: "rgba(34,197,94,0.07)", border: "1px solid rgba(34,197,94,0.2)" }}>
+              <Ring score={s.overall} size={88} />
+              <span style={{ fontSize: 10, color: C.green, fontFamily: C.mono,
+                textTransform: "uppercase", letterSpacing: "0.1em" }}>Overall</span>
+            </div>
+          </div>
+
+          <div style={{ padding: "22px 28px", borderBottom: `1px solid ${C.border}` }}>
+            <span style={{ fontSize: 10, letterSpacing: "0.14em", textTransform: "uppercase",
+              color: C.muted, fontFamily: C.mono, display: "block", marginBottom: 14 }}>Score Breakdown</span>
+            <div style={{ display: "grid", gridTemplateColumns: `repeat(${s.detPct !== null && s.llmPct !== null ? 4 : 2}, 1fr)`, gap: 12 }}>
+              {[
+                ["Questions", `${s.passed} / ${s.total}`, pctColor(Math.round(s.passed/s.total*100))],
+                ["Pass Rate", `${Math.round(s.passed/s.total*100)}%`, pctColor(Math.round(s.passed/s.total*100))],
+                s.detPct !== null && ["Deterministic", `${s.detPct}%`, pctColor(s.detPct)],
+                s.llmPct !== null && ["LLM-as-judge",  `${s.llmPct}%`, pctColor(s.llmPct)],
+              ].filter(Boolean).map(([label, val, color]) => (
+                <div key={label} style={{ background: C.bg, borderRadius: 8,
+                  padding: "12px 14px", border: `1px solid ${C.border}` }}>
+                  <span style={{ fontSize: 10, color: C.muted, fontFamily: C.mono,
+                    textTransform: "uppercase", letterSpacing: "0.08em", display: "block", marginBottom: 6 }}>{label}</span>
+                  <span style={{ fontSize: 22, fontWeight: 700, fontFamily: C.mono, color }}>{val}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div style={{ padding: "22px 28px", borderBottom: `1px solid ${C.border}` }}>
+            <span style={{ fontSize: 10, letterSpacing: "0.14em", textTransform: "uppercase",
+              color: C.muted, fontFamily: C.mono, display: "block", marginBottom: 12 }}>Question Results</span>
+            <div style={{ display: "grid", gridTemplateColumns: "40px 1fr 90px 60px",
+              fontSize: 10, color: C.muted, fontFamily: C.mono, textTransform: "uppercase",
+              letterSpacing: "0.08em", paddingBottom: 8, borderBottom: `1px solid ${C.border}`, marginBottom: 4 }}>
+              <span>ID</span><span>Question</span>
+              <span style={{ textAlign: "center" }}>Type</span>
+              <span style={{ textAlign: "right" }}>Score</span>
+            </div>
+            {d.items.map(item => (
+              <div key={item.id} style={{ display: "grid", gridTemplateColumns: "40px 1fr 90px 60px",
+                padding: "9px 0", alignItems: "center", borderBottom: `1px solid ${C.border}` }}>
+                <span style={{ fontFamily: C.mono, fontSize: 11, color: C.muted, fontWeight: 600 }}>{item.id}</span>
+                <span style={{ fontSize: 12, color: "#94a3b8", paddingRight: 12, lineHeight: 1.4 }}>
+                  {(item.question || item.id).length > 58 ? (item.question || item.id).slice(0, 58) + "…" : (item.question || item.id)}
+                </span>
+                <span style={{ textAlign: "center" }}>
+                  {item.check_type && <Pill label={item.check_type === "llm-as-judge" ? "llm" : "det"}
+                    color={item.check_type === "llm-as-judge" ? C.blue : C.amber}
+                    bg={item.check_type === "llm-as-judge" ? "rgba(96,165,250,0.1)" : "rgba(245,158,11,0.1)"} />}
+                </span>
+                <div style={{ display: "flex", alignItems: "center", gap: 8, justifyContent: "flex-end" }}>
+                  <span style={{ fontFamily: C.mono, fontSize: 12, color: scoreColor(item.score) }}>
+                    {item.score === 1 ? "1.0" : item.score.toFixed(1)}
+                  </span>
+                  {item.passed !== undefined && <Check passed={item.passed} />}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Footer */}
+          <div style={{ padding: "16px 28px", display: "flex",
+            justifyContent: "space-between", alignItems: "center", background: "#0a0d16" }}>
+            <div>
+              <span style={{ fontSize: 10, color: C.muted, fontFamily: C.mono,
+                textTransform: "uppercase", letterSpacing: "0.1em", display: "block", marginBottom: 3 }}>Certificate ID</span>
+              <span style={{ fontFamily: C.mono, fontSize: 11, color: C.dim }}>{d.cert?.id || "—"}</span>
+            </div>
+            <span style={{ fontSize: 12, color: C.muted }}>{d.evaluator?.name || examLabel}</span>
+            <div style={{ textAlign: "right" }}>
+              <span style={{ fontSize: 10, color: C.muted, fontFamily: C.mono,
+                textTransform: "uppercase", letterSpacing: "0.1em", display: "block", marginBottom: 3 }}>Valid Until</span>
+              <span style={{ fontFamily: C.mono, fontSize: 11, color: C.dim }}>{d.cert?.valid_until || "—"}</span>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ── QUESTIONS ── */}
+      {tab === "Questions" && (
+        <div style={{ width: "100%", maxWidth: 780 }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
+            <span style={{ fontSize: 13, color: C.muted }}>{s.passed}/{s.total} passed · click any row to expand</span>
+          </div>
+          {d.items.map(item => <QuestionCard key={item.id} item={item} />)}
+          {d.items.filter(i => i.passed === false).length > 0 && (
+            <div style={{ marginTop: 20, padding: "14px 18px", borderRadius: 10,
+              background: "rgba(239,68,68,0.06)", border: "1px solid rgba(239,68,68,0.2)" }}>
+              <span style={{ fontSize: 10, color: C.red, fontFamily: C.mono,
+                textTransform: "uppercase", letterSpacing: "0.1em", display: "block", marginBottom: 8 }}>Failed Questions</span>
+              {d.items.filter(i => i.passed === false).map(i => (
+                <p key={i.id} style={{ fontSize: 12, color: "#fca5a5", margin: "4px 0", lineHeight: 1.5 }}>
+                  <strong style={{ fontFamily: C.mono }}>{i.id}</strong>{i.grader_note ? ` — ${i.grader_note}` : ""}
+                </p>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* ── SCHEMA ── */}
+      {tab === "Schema" && (
+        <pre style={{ width: "100%", maxWidth: 780, background: C.surface,
+          borderRadius: 12, padding: 24, fontFamily: C.mono, fontSize: 11,
+          color: "#94a3b8", overflowX: "auto", lineHeight: 1.7,
+          border: `1px solid ${C.border}`, boxSizing: "border-box", margin: 0 }}>
+          {JSON.stringify(d, null, 2)}
+        </pre>
+      )}
+
+      <p style={{ fontSize: 10, letterSpacing: "0.1em", textTransform: "uppercase",
+        color: C.muted, fontFamily: C.mono, marginTop: 20 }}>
+        spec.ai-evals.io/cert/v0.1.0
+      </p>
+    </div>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById("eval-cert-root"));
+root.render(<EvalCert />);
+</script>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
