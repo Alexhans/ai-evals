@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-evals.io/spec/cert/v0.1.0/schema.json",
+  "$comment": "Canonical URL is currently ai-evals.io/spec/... — will migrate to spec.ai-evals.io once that subdomain has community consensus and stable DNS.",
+  "title": "AI Agent Evaluation Certificate",
+  "description": "The result of an agent sitting an exam. Produced by an eval tool, consumed by humans and auditors. v0.x.x = beta; field shapes are stable but required set may tighten in v1.",
+  "type": "object",
+  "required": ["$schema", "exam", "items"],
+  "properties": {
+
+    "$schema": {
+      "type": "string",
+      "const": "https://ai-evals.io/spec/cert/v0.1.0/schema.json",
+      "description": "Must match this URL exactly. Validators use this to identify the spec version."
+    },
+
+    "exam": {
+      "type": "object",
+      "description": "The exam that was run. Required — a cert with no exam reference is just a JSON blob.",
+      "required": ["id", "version"],
+      "properties": {
+        "id":      { "type": "string", "description": "Exam identifier.", "examples": ["simple-exam"] },
+        "version": { "type": "string", "description": "Exam version.", "examples": ["1.0.0"] },
+        "spec":    { "type": "string", "format": "uri", "description": "URL of the exam input schema, once published.", "examples": ["https://ai-evals.io/spec/exam/v0.1.0/schema.json"] },
+        "source":  { "type": "string", "format": "uri", "description": "Canonical source of the exam definition (e.g. a GitHub URL).", "examples": ["https://github.com/Alexhans/eval-ception/blob/main/docs/simple-exam.md"] }
+      },
+      "additionalProperties": false
+    },
+
+    "items": {
+      "type": "array",
+      "description": "Per-question results. One entry per question in the exam. Required and must be non-empty.",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "score"],
+        "properties": {
+
+          "id": {
+            "type": "string",
+            "description": "Question identifier. Must match the exam definition.",
+            "examples": ["Q1"]
+          },
+          "score": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "description": "Normalised score. 1.0 = full credit, 0.0 = no credit. Partial credit allowed for llm-as-judge."
+          },
+
+          "question": {
+            "type": "string",
+            "description": "Canonical question wording, copied verbatim from the exam. Omit only if exam.source is resolvable."
+          },
+          "check_type": {
+            "type": "string",
+            "enum": ["deterministic", "llm-as-judge"],
+            "description": "How correctness was checked. Strongly recommended — aids interpretation of the score."
+          },
+          "passed": {
+            "type": "boolean",
+            "description": "Binary gate, independent of score. Useful when partial credit is allowed but a threshold applies."
+          },
+          "expected": {
+            "type": "string",
+            "description": "Human-readable description of what a passing answer looks like."
+          },
+          "output": {
+            "type": "string",
+            "description": "The agent's raw output for this question."
+          },
+          "grader_note": {
+            "type": "string",
+            "description": "Why this score was awarded. Required by convention for llm-as-judge; recommended for deterministic."
+          },
+          "latency_ms": {
+            "type": "number",
+            "description": "Agent response latency in milliseconds. Omit or treat as noise when response was cached."
+          },
+          "cached": {
+            "type": "boolean",
+            "description": "Whether the response was served from the eval tool's cache. If true, latency_ms reflects cache lookup, not model inference."
+          }
+
+        },
+        "additionalProperties": false
+      }
+    },
+
+    "cert": {
+      "type": "object",
+      "description": "Identity and validity metadata for this certificate.",
+      "properties": {
+        "id":          { "type": "string", "description": "Unique certificate identifier.", "examples": ["EVAL-2025-EC-0A3F9C"] },
+        "issued":      { "type": "string", "format": "date" },
+        "valid_until": { "type": "string", "format": "date", "description": "Omit if the cert does not expire." }
+      },
+      "additionalProperties": false
+    },
+
+    "agent": {
+      "type": "object",
+      "description": "The system under test. Omit entirely for anonymous runs; use agent.id to differentiate without revealing identity.",
+      "properties": {
+        "id":       { "type": "string", "description": "Opaque identifier. A hash is fine for anonymous runs." },
+        "name":     { "type": "string", "examples": ["ai-evals.io Site Agent"] },
+        "model_id": { "type": "string", "description": "Prefer models.dev IDs.", "examples": ["claude-sonnet-4-6"] },
+        "version":  { "type": "string" },
+        "commit":   { "type": "string", "description": "Git commit SHA or equivalent." },
+        "purpose":  { "type": "string" },
+        "operator": { "type": "string", "description": "Organisation or product operating the agent." }
+      },
+      "additionalProperties": false
+    },
+
+    "environment": {
+      "type": "object",
+      "description": "Runtime conditions. Use this for reproducibility — seed, temperature, tools, framework.",
+      "properties": {
+        "evaluated_at":       { "type": "string", "format": "date-time" },
+        "temperature":        { "type": "number", "minimum": 0, "maximum": 2 },
+        "seed":               { "type": "integer" },
+        "tools_enabled":      { "type": "array", "items": { "type": "string" } },
+        "framework":          { "type": "string" },
+        "framework_version":  { "type": "string" },
+        "platform":           { "type": "string" },
+        "python":             { "type": "string" },
+        "total_duration_ms":  { "type": "number", "description": "Wall-clock time for the full eval run in milliseconds." },
+        "grading_tokens":     { "type": "integer", "description": "Total tokens consumed by LLM-as-judge grading calls." }
+      },
+      "additionalProperties": true
+    },
+
+    "evaluator": {
+      "type": "object",
+      "description": "The tool or party that ran the exam. Omit only if self-evident from context.",
+      "properties": {
+        "name":          { "type": "string", "examples": ["promptfoo", "ai-evals.io"] },
+        "version":       { "type": "string", "examples": ["0.120.25"] },
+        "url":           { "type": "string", "format": "uri" },
+        "method":        { "type": "string", "description": "How assertions were checked.", "examples": ["Deterministic starts-with + LLM-as-judge (claude-sonnet-4-6)"] },
+        "grader_model":  { "type": "string", "description": "Model used for LLM-as-judge assertions.", "examples": ["deepseek-r1:14b", "claude-sonnet-4-6"] }
+      },
+      "additionalProperties": false
+    }
+
+  },
+  "additionalProperties": false
+}
